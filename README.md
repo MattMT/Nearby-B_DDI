@@ -32,7 +32,7 @@
 |----------|----------|----------|----------|----------|
 | Fabiola Bautista Jaquín   | Documentador  |   Soft Code  |16/06/2023   |  😉 |
 | Gabriel Guzmán García   | Líder / Desarrollador Front-End  | Soft Code  |16/06/2023   | 😉 |
-| Uriel Maldonado Cortés   | Desarrollador Back-End  | Soft Code |16/06/2023  | 😉 |
+| Uriel Maldonado Cortéz   | Desarrollador Back-End  | Soft Code |16/06/2023  | 😉 |
 |Mateo Maldonado Tolentino   | Analista   | Soft Code |16/06/2023    | 😉  |
 
 
