@@ -107,8 +107,7 @@ Estas funcionalidades contribuyen a mejorar la experiencia del cliente, incremen
 6. Escalabilidad: La aplicación debe ser capaz de manejar un alto volumen de usuarios y transacciones simultáneas sin comprometer el rendimiento. Debe ser escalable para satisfacer las demandas crecientes a medida que el número de usuarios aumente.
 7. Compatibilidad: Además de la compatibilidad con sistemas operativos de smartwatches, la aplicación también debe ser compatible con diferentes versiones de firmware y modelos de smartwatches, asegurando un amplio alcance y accesibilidad para los usuarios.
 8. Eficiencia en el consumo de recursos: La aplicación debe optimizar el consumo de recursos, como la batería y la memoria del dispositivo, para garantizar un uso eficiente y prolongado sin agotar rápidamente los recursos disponibles.
-9. Localización: La aplicación debe ser localizable, permitiendo su uso en diferentes idiomas y adaptándose a las preferencias culturales y regionales de los usuarios en términos de formatos de fecha, moneda, etc.
-10. Fiabilidad: La aplicación debe ser confiable y estable, evitando errores y fallas frecuentes. Se deben implementar mecanismos de control de calidad y pruebas exhaustivas para garantizar su correcto funcionamiento.
+9.  Fiabilidad: La aplicación debe ser confiable y estable, evitando errores y fallas frecuentes. Se deben implementar mecanismos de control de calidad y pruebas exhaustivas para garantizar su correcto funcionamiento.
 
 
 
