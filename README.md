@@ -46,10 +46,9 @@ El propósito de Nearby B tiene como objetivo que los clientes de diferentes bar
 
 ## Alcance del producto / Software 
 
-Nearby B permitirá a los clientes que tengan un dispositivo smartwatch recibir y acceder a la información de los bares de manera fácil y rápida. La aplicación también podrá enviar notificaciones a los clientes para informarles sobre promociones y eventos especiales desde el smartwatch. Así mismo, promover las ventas y aumentar la fidelidad del cliente.
+Nearby B permitirá a los clientes que tengan un dispositivo smartwatch recibir y acceder a la información de los bares de manera fácil y rápida. Así mismo, promover las ventas y aumentar la fidelidad del cliente.
 A continuación se detallan los beneficios que brindará a los negocios:
 - Mejora de la experiencia del cliente: Nearby B facilita a los clientes la búsqueda de opciones relevantes y oportunidades en los bares de manera rápida y conveniente, lo que mejora su experiencia al interactuar con la aplicación.
--	Incremento de la satisfacción y fidelidad del cliente: Al ofrecer una experiencia personalizada y única, Nearby B aumenta la satisfacción del cliente. Las notificaciones y ofertas personalizadas hacen que los clientes se sientan valorados y atendidos de manera individualizada, lo que puede fortalecer su conexión emocional con los bares y generar fidelidad a largo plazo.
 -	Generación de más ventas: La capacidad de enviar invitaciones y ofertas personalizadas desde el smartwatch impulsa el consumo de los clientes en los bares. Al recibir notificaciones sobre promociones y eventos especiales, los clientes se sienten motivados a visitar los establecimientos y aprovechar las ofertas, lo que potencialmente incrementa las ventas.
 -	Mayor competitividad: La adopción de Nearby B brinda a los bares una ventaja competitiva al ofrecer una experiencia innovadora y personalizada. Destacarse de la competencia y proporcionar una experiencia diferenciada es fundamental para atraer y retener a los clientes en un mercado competitivo.
 
@@ -125,20 +124,6 @@ Estas funcionalidades contribuyen a mejorar la experiencia del cliente, incremen
 10. Cooperación con los Bares Participantes: La aplicación debe establecer una relación de cooperación y colaboración con los bares participantes, brindándoles soporte y asistencia en la promoción de sus eventos y ofertas. Los bares también deben cumplir con las políticas y directrices establecidas por la aplicación.
 
 Estas reglas de negocio establecen los lineamientos y requisitos para el uso adecuado y responsable de la aplicación Nearby B, tanto para los usuarios como para los bares participantes.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
