@@ -10,6 +10,7 @@
 </div
 
 
+
  
 ## Historial de Versiones
 
@@ -36,9 +37,12 @@
 |Mateo Maldonado Tolentino   | Analista   | Soft Code |16/06/2023    | 😉  |
 
 
+
 ## Propósito 
 
 El propósito de Nearby B tiene como objetivo que los clientes de diferentes bares reciban invitaciones y promociones personalizadas directamente en sus dispositivos smartwatch, lo que les permitirá estar al tanto de las últimas ofertas y eventos en los diferentes bares. Nearby B se basa en la mejora de la experiencia del cliente, el incremento de su participación, el fomento de interacciones sociales y la personalización de las ofertas. Estos elementos son fundamentales para lograr el objetivo de la aplicación y crear una experiencia enriquecedora tanto para los clientes como para los establecimientos de encuentros seleccionados.
+
+
 
 ## Alcance del producto / Software 
 
@@ -50,6 +54,7 @@ A continuación se detallan los beneficios que brindará a los negocios:
 -	Mayor competitividad: La adopción de Nearby B brinda a los bares una ventaja competitiva al ofrecer una experiencia innovadora y personalizada. Destacarse de la competencia y proporcionar una experiencia diferenciada es fundamental para atraer y retener a los clientes en un mercado competitivo.
 
 Nearby B se basa en la mejora de la experiencia del cliente, el aumento de las ventas, la generación de satisfacción y fidelidad del cliente, y la creación de una ventaja competitiva para los bares participantes. Estos beneficios respaldan el valor y el potencial impacto positivo que la aplicación puede tener tanto para los clientes como para los negocios involucrados.
+
 
 
 
@@ -75,6 +80,7 @@ Estas funcionalidades contribuyen a mejorar la experiencia del cliente, incremen
 
 
 
+
 ## Requerimientos funcionales 
 
 1. Compatibilidad con sistemas operativos: Nearby B debe ser compatible con los principales sistemas operativos de smartwatches, como Android Wear y watchOS, para garantizar que los usuarios puedan acceder a la aplicación independientemente del dispositivo que utilicen.
@@ -89,6 +95,8 @@ Estas funcionalidades contribuyen a mejorar la experiencia del cliente, incremen
 10. Información sobre el ambiente y estilo del bar: Los usuarios deben poder obtener información sobre el ambiente y el estilo de los bares para tomar decisiones informadas sobre qué lugares visitar. La aplicación debe proporcionar descripciones y detalles relevantes sobre el ambiente, decoración y música.
 
 
+
+
 ## Requerimientos no funcionales 
 
 1. Rendimiento: La aplicación debe ser eficiente y rápida en términos de tiempo de carga y respuesta. Los usuarios deben poder acceder a la información y funcionalidades de forma ágil, sin experimentar retrasos significativos.
@@ -101,6 +109,25 @@ Estas funcionalidades contribuyen a mejorar la experiencia del cliente, incremen
 8. Eficiencia en el consumo de recursos: La aplicación debe optimizar el consumo de recursos, como la batería y la memoria del dispositivo, para garantizar un uso eficiente y prolongado sin agotar rápidamente los recursos disponibles.
 9. Localización: La aplicación debe ser localizable, permitiendo su uso en diferentes idiomas y adaptándose a las preferencias culturales y regionales de los usuarios en términos de formatos de fecha, moneda, etc.
 10. Fiabilidad: La aplicación debe ser confiable y estable, evitando errores y fallas frecuentes. Se deben implementar mecanismos de control de calidad y pruebas exhaustivas para garantizar su correcto funcionamiento.
+
+
+
+## Reglas de negocio
+
+1. Registro de Usuarios: Los usuarios deben registrarse en la aplicación proporcionando información precisa y verídica sobre su identidad y preferencias. Se debe verificar la autenticidad de la información proporcionada.
+2. Privacidad de los Usuarios: La aplicación debe proteger la privacidad de los usuarios y asegurar que su información personal no sea compartida con terceros sin su consentimiento. Se deben seguir las leyes y regulaciones de protección de datos aplicables.
+3. Uso Responsable de la Aplicación: Los usuarios deben utilizar la aplicación de manera responsable y respetar las normas de conducta establecidas. No se permitirá el uso de la aplicación para fines ilegales, difamatorios, discriminatorios o perjudiciales.
+4. Promociones Exclusivas: Los bares participantes pueden ofrecer promociones exclusivas a través de la aplicación. Estas promociones deben ser auténticas y estar disponibles según los términos y condiciones establecidos por cada bar.
+5. Uso Adecuado de las Promociones: Los usuarios deben utilizar las promociones y descuentos proporcionados por la aplicación de acuerdo con las instrucciones y restricciones especificadas. El uso indebido de las promociones puede resultar en la suspensión de la cuenta del usuario.
+
+
+
+
+
+
+
+
+
 
 
 
