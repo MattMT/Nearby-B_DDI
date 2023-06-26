@@ -119,6 +119,13 @@ Estas funcionalidades contribuyen a mejorar la experiencia del cliente, incremen
 3. Uso Responsable de la Aplicación: Los usuarios deben utilizar la aplicación de manera responsable y respetar las normas de conducta establecidas. No se permitirá el uso de la aplicación para fines ilegales, difamatorios, discriminatorios o perjudiciales.
 4. Promociones Exclusivas: Los bares participantes pueden ofrecer promociones exclusivas a través de la aplicación. Estas promociones deben ser auténticas y estar disponibles según los términos y condiciones establecidos por cada bar.
 5. Uso Adecuado de las Promociones: Los usuarios deben utilizar las promociones y descuentos proporcionados por la aplicación de acuerdo con las instrucciones y restricciones especificadas. El uso indebido de las promociones puede resultar en la suspensión de la cuenta del usuario.
+6. Respeto de las Opiniones y Comentarios: Los usuarios deben respetar las opiniones y comentarios de otros usuarios. No se permitirá el acoso, la difamación o el lenguaje ofensivo en la sección de comentarios y reseñas.
+7. Cumplimiento de las Regulaciones Locales: Los bares participantes y los usuarios de la aplicación deben cumplir con todas las regulaciones y leyes locales aplicables, incluyendo las relacionadas con el consumo de alcohol, horarios de funcionamiento, y normas de salud y seguridad.
+8. Actualización de Información: Los bares participantes deben mantener actualizada su información, incluyendo horarios de funcionamiento, menús y promociones. Los usuarios deben recibir información precisa y actualizada sobre los bares a través de la aplicación.
+9. Responsabilidad de los Usuarios: Los usuarios son responsables de su propio comportamiento y acciones mientras utilizan la aplicación. No se permitirá el uso de identidades falsas o engañosas, ni la realización de actividades que puedan dañar la reputación de la aplicación o los bares participantes.
+10. Cooperación con los Bares Participantes: La aplicación debe establecer una relación de cooperación y colaboración con los bares participantes, brindándoles soporte y asistencia en la promoción de sus eventos y ofertas. Los bares también deben cumplir con las políticas y directrices establecidas por la aplicación.
+
+Estas reglas de negocio establecen los lineamientos y requisitos para el uso adecuado y responsable de la aplicación Nearby B, tanto para los usuarios como para los bares participantes.
 
 
 
