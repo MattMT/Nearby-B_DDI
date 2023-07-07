@@ -38,27 +38,32 @@
 
 
 
-## Propósito 
+## 1. Propósito 
 
 El propósito de Near B es proporcionar a los clientes de diferentes bares invitaciones y promociones personalizadas en sus dispositivos smartwatch, permitiéndoles estar al tanto de las últimas ofertas y eventos en los establecimientos. La aplicación se enfoca en mejorar la experiencia del cliente, aumentar su participación, fomentar interacciones sociales y personalizar las ofertas. Estos elementos son fundamentales para lograr el objetivo de la aplicación y crear una experiencia enriquecedora tanto para los clientes como para los bares participantes.
 
 
 
-## Alcance del producto / Software 
+## 2. Alcance del producto / Software 
 
 Nearby B permitirá a los clientes que tengan un smartwatch recibir y acceder fácilmente a la información de los bares, promoviendo las ventas y aumentando la fidelidad del cliente. Los beneficios que brindará a los negocios son los siguientes:
 
-1. Mejora de la experiencia del cliente: Nearby B facilita a los clientes la búsqueda rápida y conveniente de opciones relevantes y oportunidades en los bares, lo cual mejora su interacción con la aplicación.
-2. Generación de más ventas: La capacidad de enviar invitaciones y ofertas personalizadas desde el smartwatch impulsa el consumo de los clientes en los bares. Al recibir notificaciones sobre promociones y eventos especiales, los clientes se sienten motivados a visitar los establecimientos y aprovechar las ofertas, lo que incrementa las ventas.
-3. Mayor competitividad: La adopción de Nearby B brinda a los bares una ventaja competitiva al ofrecer una experiencia innovadora y personalizada. Destacarse de la competencia y proporcionar una experiencia diferenciada es fundamental para atraer y retener a los clientes en un mercado competitivo.
+- Mejora de la experiencia del cliente: Nearby B facilita a los clientes la búsqueda rápida y conveniente de opciones relevantes y oportunidades en los bares, lo cual mejora su interacción con la aplicación.
+- Generación de más ventas: La capacidad de enviar invitaciones y ofertas personalizadas desde el smartwatch impulsa el consumo de los clientes en los bares. Al recibir notificaciones sobre promociones y eventos especiales, los clientes se sienten motivados a visitar los establecimientos y aprovechar las ofertas, lo que incrementa las ventas.
+- Mayor competitividad: La adopción de Nearby B brinda a los bares una ventaja competitiva al ofrecer una experiencia innovadora y personalizada. Destacarse de la competencia y proporcionar una experiencia diferenciada es fundamental para atraer y retener a los clientes en un mercado competitivo.
 
 Nearby B se basa en la mejora de la experiencia del cliente, el aumento de las ventas, la generación de satisfacción y fidelidad del cliente, y la creación de una ventaja competitiva para los bares participantes. Estos beneficios respaldan el valor y el potencial impacto positivo que la aplicación puede tener tanto para los clientes como para los negocios involucrados.
 
 
 
+## 3. Referencias
 
 
-## Funcionalidades del producto
+
+
+
+
+## 4. Funcionalidades del producto
 
 1. Compatibilidad con sistemas operativos: Nearby B es compatible con los principales sistemas operativos de smartwatches, lo que amplía su accesibilidad y alcance a un mayor número de usuarios.
 2. Interfaz intuitiva y fácil de usar: La aplicación cuenta con una interfaz optimizada para pantallas pequeñas, lo que facilita la navegación y el uso sin complicaciones.
@@ -80,11 +85,11 @@ Estas funcionalidades contribuyen a mejorar la experiencia del cliente, incremen
 
 
 
-## Clases y características de usuario
+## 5. Clases y características de usuario
 
 Podemos clasificar a los usuarios de Nearby B en diferentes tipos, teniendo en cuenta sus características y frecuencia de uso. A continuación, se presenta una lista de los tipos de usuarios y las funcionalidades del producto para cada uno:
 
-1. Clientes habituales:
+A) Clientes habituales:
    - Uso frecuente del sistema.
    - Acceso a todas las funcionalidades del producto.
    - Registro de usuarios.
@@ -97,7 +102,7 @@ Podemos clasificar a los usuarios de Nearby B en diferentes tipos, teniendo en c
    - Capacidad de calificar y comentar sobre la experiencia en el bar.
    - Capacidad de compartir promociones y eventos con amigos.
 
-3. Usuarios ocasionales:
+B) Usuarios ocasionales:
    - Acceso esporádico al sistema.
    - Uso limitado de funcionalidades.
    - Registro de usuarios.
@@ -106,7 +111,7 @@ Podemos clasificar a los usuarios de Nearby B en diferentes tipos, teniendo en c
    - Uso de geolocalización.
    - Recepción de notificaciones sobre eventos próximos.
 
-3. Usuarios interesados en la música en vivo:
+C) Usuarios interesados en la música en vivo:
    - Preferencia por la música en vivo en los bares.
    - Acceso frecuente a la sección de listas de reproducción o música en vivo.
    - Registro de usuarios.
@@ -116,7 +121,7 @@ Podemos clasificar a los usuarios de Nearby B en diferentes tipos, teniendo en c
    - Envío y gestión de invitaciones.
    - Recepción de notificaciones sobre eventos próximos.
 
-4. Usuarios en búsqueda de nuevos bares:
+D) Usuarios en búsqueda de nuevos bares:
    - Interés en explorar diferentes opciones de bares.
    - Acceso frecuente a recomendaciones de bares similares o relacionados.
    - Registro de usuarios.
@@ -129,7 +134,7 @@ Podemos clasificar a los usuarios de Nearby B en diferentes tipos, teniendo en c
 
 
 
-## Entorno operativo
+## 6. Entorno operativo
 
 El sistema Near B se desarrollará en un entorno operativo específico que consta de los siguientes elementos:
 
@@ -141,23 +146,55 @@ Al tener en cuenta estos elementos del entorno operativo, se garantiza que el si
 
 
 
-## Requerimientos funcionales 
+## 7. Requerimientos funcionales 
 
-1. Compatibilidad con sistemas operativos: Nearby B debe ser compatible con los principales sistemas operativos de smartwatches, como Android Wear y watchOS, para garantizar que los usuarios puedan acceder a la aplicación independientemente del dispositivo que utilicen.
-2. Calendario de eventos y promociones: Nearby B debe incluir un calendario que muestre de manera clara y organizada los eventos y promociones disponibles en los bares. Esto permitirá a los usuarios planificar sus visitas y participación en actividades de manera efectiva.
-3. Uso de geolocalización: La aplicación debe utilizar la geolocalización para detectar la ubicación del usuario y mostrar los bares cercanos a su posición. Esto facilitará la búsqueda de opciones cercanas y mejorará la experiencia de usuario al proporcionar información relevante y personalizada.
-4. Envío de invitaciones personalizadas: Nearby B debe permitir a los usuarios enviar invitaciones personalizadas a clientes seleccionados. Estas invitaciones deben incluir promociones exclusivas y relevantes, lo que fomentará la participación de los clientes y aumentará la interacción con los bares.
-5. Gestión de invitaciones y confirmaciones de asistencia: Los usuarios deben poder gestionar las invitaciones que han enviado, así como recibir confirmaciones de asistencia por parte de los destinatarios. Esto facilitará la organización de eventos y promociones, permitiendo un control más efectivo de la participación de los usuarios.
-6. Notificaciones sobre eventos próximos: La aplicación debe enviar notificaciones a los usuarios para informarles sobre eventos próximos en los bares seleccionados. Estas notificaciones deben ser oportunas y ayudar a los usuarios a planificar su participación con anticipación.
-7. Notificaciones instantáneas: Nearby B debe ser capaz de enviar notificaciones instantáneas a los usuarios para recordarles eventos especiales y promociones en tiempo real. Esto garantizará que los usuarios estén al tanto de las oportunidades actuales y no se pierdan ninguna oferta relevante.
-8. Consulta de información sobre el menú y las bebidas: Los usuarios deben poder acceder a información detallada sobre el menú y las bebidas disponibles en los bares. Esto les permitirá tomar decisiones informadas sobre qué consumir durante su visita.
-9. Capacidad de compartir promociones y eventos especiales con amigos: La aplicación debe ofrecer a los usuarios la posibilidad de compartir promociones y eventos con sus amigos a través de diferentes plataformas de comunicación, como redes sociales o mensajería instantánea. Esto aumentará la visibilidad de las promociones y fomentará la participación en los establecimientos.
-10. Información sobre el ambiente y estilo del bar: Los usuarios deben poder obtener información sobre el ambiente y el estilo de los bares para tomar decisiones informadas sobre qué lugares visitar. La aplicación debe proporcionar descripciones y detalles relevantes sobre el ambiente, decoración y música.
+A continuación se muestran los requerimientos funcionales:
+
+| **7.1. Compatibilidad con sistemas operativos** | |
+|---|---|
+| **Descripción** | Nearby B debe ser compatible con los principales sistemas operativos de smartwatches, como Android Wear y watchOS, para garantizar que los usuarios puedan acceder a la aplicación independientemente del dispositivo que utilicen. |
+| **Prioridad** | Alta |
+| **Acciones iniciadoras y comportamiento esperado** | - El sistema debe reconocer y ser compatible con los sistemas operativos de smartwatches, como Android Wear y watchOS.<br>- Nearby B debe ejecutarse sin problemas en diferentes modelos de smartwatches disponibles en el mercado. |
+| **Requerimientos funcionales** | - REQ-1: El sistema debe ser compatible con Android Wear y watchOS.<br>- REQ-2: Nearby B debe ejecutarse sin problemas en diferentes modelos de smartwatches. |
 
 
+| **7.2. Calendario de eventos y promociones** | |
+|---|---|
+| **Descripción** | Nearby B debe incluir un calendario que muestre de manera clara y organizada los eventos y promociones disponibles en los bares. Esto permitirá a los usuarios planificar sus visitas y participación en actividades de manera efectiva. |
+| **Prioridad** | Alta |
+| **Acciones iniciadoras y comportamiento esperado** | - Los usuarios deben poder acceder al calendario desde la aplicación.<br>- El calendario debe mostrar los eventos y promociones disponibles en los bares.<br>- Los usuarios deben poder programar sus visitas en función de la información proporcionada en el calendario. |
+| **Requerimientos funcionales** | - REQ-6: Los usuarios deben poder acceder al calendario desde la aplicación.<br>- REQ-7: El calendario debe mostrar los eventos y promociones disponibles en los bares.<br>- REQ-8: Los usuarios deben poder programar sus visitas en función de la información proporcionada en el calendario. |
 
 
-## Requerimientos no funcionales 
+| **7.3. Uso de geolocalización** | |
+|---|---|
+| **Descripción** | La aplicación debe utilizar la geolocalización para detectar la ubicación del usuario y mostrar los bares cercanos a su posición. Esto facilitará la búsqueda de opciones cercanas y mejorará la experiencia del usuario al proporcionar información relevante y personalizada. |
+| **Prioridad** | Alta |
+| **Acciones iniciadoras y comportamiento esperado** | - El sistema debe utilizar la geolocalización para detectar la ubicación del usuario.<br>- Near B debe mostrar los bares cercanos a la ubicación del usuario en función de los datos de geolocalización.<br>- Los usuarios deben poder buscar opciones cercanas basadas en su ubicación actual. |
+| **Requerimientos funcionales** | - REQ-9: El sistema debe utilizar la geolocalización para detectar la ubicación del usuario.<br>- REQ-10: Near B debe mostrar los bares cercanos a la ubicación del usuario en función de los datos de geolocalización.<br>- REQ-11: Los usuarios deben poder buscar opciones cercanas basadas en su ubicación actual. |
+
+
+| **7.4. Envío de invitaciones personalizadas** | |
+|---|---|
+| **Descripción** | Nearby B debe permitir a los usuarios enviar invitaciones personalizadas a clientes seleccionados. Estas invitaciones deben incluir promociones exclusivas y relevantes, lo que fomentará la participación de los clientes y encontrará la interacción con los bares. |
+| **Prioridad** | Alta |
+| **Acciones iniciadoras y comportamiento esperado** | - Los usuarios deben poder enviar invitaciones personalizadas desde la aplicación.<br>- Las invitaciones deben incluir promociones exclusivas y relevantes para los clientes seleccionados. |
+| **Requerimientos funcionales** | - REQ-12: Los usuarios deben poder enviar invitaciones personalizadas desde la aplicación.<br>- REQ-13: Las invitaciones deben incluir promociones exclusivas y relevantes para los clientes seleccionados. |
+
+
+| **7.5. Gestión de invitaciones y confirmaciones de asistencia** | |
+|---|---|
+| **Descripción** | Los usuarios deben poder gestionar las invitaciones que han enviado, así como recibir confirmaciones de asistencia por parte de los destinatarios. Esto facilitará la organización de eventos y promociones, permitiendo un control más efectivo de la participación de los usuarios. |
+| **Prioridad** | Media |
+| **Acciones iniciadoras y comportamiento esperado** | - Los usuarios deben poder realizar un registro de las invitaciones enviadas desde la aplicación.<br>- Los usuarios deben recibir confirmaciones de asistencia por parte de los destinatarios de las invitaciones. |
+| **Requerimientos funcionales** | - REQ-14: Los usuarios deben poder realizar un registro de las invitaciones enviadas desde la aplicación.<br>- REQ-15: Los usuarios deben recibir confirmaciones de asistencia por parte de los destinatarios de las invitaciones. |
+
+
+
+
+
+
+## 8. Requerimientos no funcionales 
 
 1. Rendimiento: La aplicación debe ser eficiente y rápida en términos de tiempo de carga y respuesta. Los usuarios deben poder acceder a la información y funcionalidades de forma ágil, sin experimentar retrasos significativos.
 2. Seguridad: La aplicación debe garantizar la seguridad de los datos de los usuarios, utilizando técnicas de encriptación y medidas de protección adecuadas. Se deben implementar mecanismos de autenticación y autorización para asegurar que solo los usuarios autorizados tengan acceso a la información y funcionalidades.
@@ -171,7 +208,7 @@ Al tener en cuenta estos elementos del entorno operativo, se garantiza que el si
 
 
 
-## Reglas de negocio
+## 9. Reglas de negocio
 
 1. Registro de Usuarios: Los usuarios deben registrarse en la aplicación proporcionando información precisa y verídica sobre su identidad y preferencias. Se debe verificar la autenticidad de la información proporcionada.
 2. Privacidad de los Usuarios: La aplicación debe proteger la privacidad de los usuarios y asegurar que su información personal no sea compartida con terceros sin su consentimiento. Se deben seguir las leyes y regulaciones de protección de datos aplicables.
@@ -185,11 +222,6 @@ Al tener en cuenta estos elementos del entorno operativo, se garantiza que el si
 10. Cooperación con los Bares Participantes: La aplicación debe establecer una relación de cooperación y colaboración con los bares participantes, brindándoles soporte y asistencia en la promoción de sus eventos y ofertas. Los bares también deben cumplir con las políticas y directrices establecidas por la aplicación.
 
 Estas reglas de negocio establecen los lineamientos y requisitos para el uso adecuado y responsable de la aplicación Nearby B, tanto para los usuarios como para los bares participantes.
-
-
-
-
-
 
 
 
