@@ -40,19 +40,20 @@
 
 ## Propósito 
 
-El propósito de Nearby B tiene como objetivo que los clientes de diferentes bares reciban invitaciones y promociones personalizadas directamente en sus dispositivos smartwatch, lo que les permitirá estar al tanto de las últimas ofertas y eventos en los diferentes bares. Nearby B se basa en la mejora de la experiencia del cliente, el incremento de su participación, el fomento de interacciones sociales y la personalización de las ofertas. Estos elementos son fundamentales para lograr el objetivo de la aplicación y crear una experiencia enriquecedora tanto para los clientes como para los establecimientos de encuentros seleccionados.
+El propósito de Near B es proporcionar a los clientes de diferentes bares invitaciones y promociones personalizadas en sus dispositivos smartwatch, permitiéndoles estar al tanto de las últimas ofertas y eventos en los establecimientos. La aplicación se enfoca en mejorar la experiencia del cliente, aumentar su participación, fomentar interacciones sociales y personalizar las ofertas. Estos elementos son fundamentales para lograr el objetivo de la aplicación y crear una experiencia enriquecedora tanto para los clientes como para los bares participantes.
 
 
 
 ## Alcance del producto / Software 
 
-Nearby B permitirá a los clientes que tengan un dispositivo smartwatch recibir y acceder a la información de los bares de manera fácil y rápida. Así mismo, promover las ventas y aumentar la fidelidad del cliente.
-A continuación se detallan los beneficios que brindará a los negocios:
-- Mejora de la experiencia del cliente: Nearby B facilita a los clientes la búsqueda de opciones relevantes y oportunidades en los bares de manera rápida y conveniente, lo que mejora su experiencia al interactuar con la aplicación.
-- Generación de más ventas: La capacidad de enviar invitaciones y ofertas personalizadas desde el smartwatch impulsa el consumo de los clientes en los bares. Al recibir notificaciones sobre promociones y eventos especiales, los clientes se sienten motivados a visitar los establecimientos y aprovechar las ofertas, lo que potencialmente incrementa las ventas.
-- Mayor competitividad: La adopción de Nearby B brinda a los bares una ventaja competitiva al ofrecer una experiencia innovadora y personalizada. Destacarse de la competencia y proporcionar una experiencia diferenciada es fundamental para atraer y retener a los clientes en un mercado competitivo.
+Nearby B permitirá a los clientes que tengan un smartwatch recibir y acceder fácilmente a la información de los bares, promoviendo las ventas y aumentando la fidelidad del cliente. Los beneficios que brindará a los negocios son los siguientes:
+
+1. Mejora de la experiencia del cliente: Nearby B facilita a los clientes la búsqueda rápida y conveniente de opciones relevantes y oportunidades en los bares, lo cual mejora su interacción con la aplicación.
+2. Generación de más ventas: La capacidad de enviar invitaciones y ofertas personalizadas desde el smartwatch impulsa el consumo de los clientes en los bares. Al recibir notificaciones sobre promociones y eventos especiales, los clientes se sienten motivados a visitar los establecimientos y aprovechar las ofertas, lo que incrementa las ventas.
+3. Mayor competitividad: La adopción de Nearby B brinda a los bares una ventaja competitiva al ofrecer una experiencia innovadora y personalizada. Destacarse de la competencia y proporcionar una experiencia diferenciada es fundamental para atraer y retener a los clientes en un mercado competitivo.
 
 Nearby B se basa en la mejora de la experiencia del cliente, el aumento de las ventas, la generación de satisfacción y fidelidad del cliente, y la creación de una ventaja competitiva para los bares participantes. Estos beneficios respaldan el valor y el potencial impacto positivo que la aplicación puede tener tanto para los clientes como para los negocios involucrados.
+
 
 
 
@@ -129,7 +130,7 @@ Estas reglas de negocio establecen los lineamientos y requisitos para el uso ade
 
 ## Clases y características de usuario
 
-Podemos clasificar a los usuarios de Nearby B en diferentes tipos, teniendo en cuenta sus características y frecuencia de uso. A continuación, se presenta una lista de los tipos de usuarios y las funcionalidades del producto relevantes para cada uno:
+Podemos clasificar a los usuarios de Nearby B en diferentes tipos, teniendo en cuenta sus características y frecuencia de uso. A continuación, se presenta una lista de los tipos de usuarios y las funcionalidades del producto para cada uno:
 
 1. Clientes habituales:
    - Uso frecuente del sistema.
