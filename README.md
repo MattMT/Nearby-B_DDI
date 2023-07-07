@@ -189,7 +189,44 @@ A continuación se muestran los requerimientos funcionales:
 | **Acciones iniciadoras y comportamiento esperado** | - Los usuarios deben poder realizar un registro de las invitaciones enviadas desde la aplicación.<br>- Los usuarios deben recibir confirmaciones de asistencia por parte de los destinatarios de las invitaciones. |
 | **Requerimientos funcionales** | - REQ-14: Los usuarios deben poder realizar un registro de las invitaciones enviadas desde la aplicación.<br>- REQ-15: Los usuarios deben recibir confirmaciones de asistencia por parte de los destinatarios de las invitaciones. |
 
+| **7.6. Notificaciones sobre eventos próximos** | |
+|---|---|
+| **Descripción** | La aplicación debe enviar notificaciones a los usuarios para informarles sobre eventos próximos en los bares seleccionados. Estas notificaciones deben ser oportunas y ayudar a los usuarios a planificar su participación con anticipación. |
+| **Prioridad** | Alta |
+| **Acciones iniciadoras y comportamiento esperado** | - Los usuarios deben recibir notificaciones sobre eventos próximos en los bares que han seleccionado.<br>- Las notificaciones deben ser oportunas y ayudar a los usuarios a planificar su participación con anticipación. |
+| **Requerimientos funcionales** | - REQ-16: Los usuarios deben recibir notificaciones sobre eventos próximos en los bares que han seleccionado.<br>- REQ-17: Las notificaciones deben ser oportunas y ayudar a los usuarios a planificar su participación con anticipación. |
 
+
+| **7.7. Notificaciones instantáneas** | |
+|---|---|
+| **Descripción** | Nearby B debe ser capaz de enviar notificaciones instantáneas a los usuarios para recordarles eventos especiales y promociones en tiempo real. Esto garantizará que los usuarios estén al tanto de las oportunidades actuales y no se pierdan ninguna oferta relevante. |
+| **Prioridad** | Alta |
+| **Acciones iniciadoras y comportamiento esperado** | - La aplicación debe enviar notificaciones instantáneas a los usuarios para recordarles eventos especiales y promociones en tiempo real. |
+| **Requerimientos funcionales** | - REQ-18: La aplicación debe enviar notificaciones instantáneas a los usuarios para recordarles eventos especiales y promociones en tiempo real. |
+
+
+| **7.8. Consulta de información sobre el menú y las bebidas** | |
+|---|---|
+| **Descripción** | Los usuarios deben poder acceder a información detallada sobre el menú y las bebidas disponibles en los bares. Esto les permitirá tomar decisiones informadas sobre qué consumir durante su visita. |
+| **Prioridad** | Media |
+| **Acciones iniciadoras y comportamiento esperado** | - Los usuarios deben poder consultar información detallada sobre el menú y las bebidas disponibles en los bares desde la aplicación. |
+| **Requerimientos funcionales** | - REQ-19: Los usuarios deben poder consultar información detallada sobre el menú y las bebidas disponibles en los bares desde la aplicación. |
+
+
+| 7.9. Capacidad de compartir promociones y eventos especiales con amigos | |
+|---|---|
+| **Descripción** | La aplicación debe ofrecer a los usuarios la posibilidad de compartir promociones y eventos con sus amigos a través de diferentes plataformas de comunicación, como redes sociales o mensajería instantánea. Esto evitará la visibilidad de las promociones y fomentará la participación en los establecimientos. |
+| **Prioridad** | Media |
+| **Acciones iniciadoras y comportamiento esperado** | - Los usuarios deben poder compartir promociones y eventos especiales con sus amigos desde la aplicación.<br>- Se deben proporcionar opciones para compartir a través de redes sociales y mensajería instantánea. |
+| **Requerimientos funcionales** | - REQ-20: Los usuarios deben poder compartir promociones y eventos especiales con sus amigos desde la aplicación.<br>- REQ-21: Se deben proporcionar opciones para compartir a través de redes sociales y mensajería instantánea. |
+
+
+| 7.10. Información sobre el ambiente y estilo del bar | |
+|---|---|
+| **Descripción** | Los usuarios deben poder obtener información sobre el ambiente y el estilo de los bares para tomar decisiones informadas sobre qué lugares visitar. La aplicación debe proporcionar descripciones y detalles relevantes sobre el ambiente, la decoración y la música. |
+| **Prioridad** | Media |
+| **Acciones iniciadoras y comportamiento esperado** | - Los usuarios deben poder acceder a información sobre el ambiente y el estilo de los bares desde la aplicación.<br>- La aplicación debe proporcionar descripciones y detalles relevantes sobre el ambiente, la decoración y la música de cada bar. |
+| **Requerimientos funcionales** | - REQ-22: Los usuarios deben poder acceder a información sobre el ambiente y el estilo de los bares desde la aplicación.<br>- REQ-23: La aplicación debe proporcionar descripciones y detalles relevantes sobre el ambiente, la decoración y la música de cada bar. |
 
 
 
