@@ -127,6 +127,54 @@ Estas reglas de negocio establecen los lineamientos y requisitos para el uso ade
 
 
 
+## Clases y características de usuario
+
+Podemos clasificar a los usuarios de Nearby B en diferentes tipos, teniendo en cuenta sus características y frecuencia de uso. A continuación, se presenta una lista de los tipos de usuarios y las funcionalidades del producto relevantes para cada uno:
+
+1. Clientes habituales:
+   - Uso frecuente del sistema.
+   - Acceso a todas las funcionalidades del producto.
+   - Registro de usuarios.
+   - Consulta de información sobre el menú y las bebidas.
+   - Calendario de eventos y promociones.
+   - Uso de geolocalización.
+   - Envío y gestión de invitaciones.
+   - Recepción de notificaciones sobre eventos próximos.
+   - Consulta de opiniones y reseñas de otros clientes.
+   - Capacidad de calificar y comentar sobre la experiencia en el bar.
+   - Capacidad de compartir promociones y eventos con amigos.
+
+2. Usuarios ocasionales:
+   - Acceso esporádico al sistema.
+   - Uso limitado de funcionalidades.
+   - Registro de usuarios.
+   - Consulta de información sobre el menú y las bebidas.
+   - Calendario de eventos y promociones.
+   - Uso de geolocalización.
+   - Recepción de notificaciones sobre eventos próximos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
