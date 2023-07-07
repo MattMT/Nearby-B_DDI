@@ -153,6 +153,26 @@ Podemos clasificar a los usuarios de Nearby B en diferentes tipos, teniendo en c
    - Uso de geolocalización.
    - Recepción de notificaciones sobre eventos próximos.
 
+3. Usuarios interesados en la música en vivo:
+   - Preferencia por la música en vivo en los bares.
+   - Acceso frecuente a la sección de listas de reproducción o música en vivo.
+   - Registro de usuarios.
+   - Consulta de información sobre el menú y las bebidas.
+   - Calendario de eventos y promociones.
+   - Uso de geolocalización.
+   - Envío y gestión de invitaciones.
+   - Recepción de notificaciones sobre eventos próximos.
+
+4. Usuarios en búsqueda de nuevos bares:
+   - Interés en explorar diferentes opciones de bares.
+   - Acceso frecuente a recomendaciones de bares similares o relacionados.
+   - Registro de usuarios.
+   - Consulta de información sobre el menú y las bebidas.
+   - Calendario de eventos y promociones.
+   - Uso de geolocalización.
+   - Envío y gestión de invitaciones.
+   - Recepción de notificaciones sobre eventos próximos.
+   - Consulta de opiniones y reseñas de otros clientes.
 
 
 
