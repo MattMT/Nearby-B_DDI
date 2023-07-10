@@ -40,24 +40,29 @@
 
 ## 1. Propósito 
 
-El propósito de Near B es proporcionar a los clientes de diferentes bares invitaciones y promociones personalizadas en sus dispositivos smartwatch, permitiéndoles estar al tanto de las últimas ofertas y eventos en los establecimientos. La aplicación se enfoca en mejorar la experiencia del cliente, aumentar su participación, fomentar interacciones sociales y personalizar las ofertas. Estos elementos son fundamentales para lograr el objetivo de la aplicación y crear una experiencia enriquecedora tanto para los clientes como para los bares participantes.
+El propósito de Nearby B es ofrecer a los clientes de diferentes bares invitaciones y promociones personalizadas en sus dispositivos smartwatch, para que puedan estar informados sobre las últimas ofertas y eventos en los establecimientos.  Anteriormente, los clientes tenían dificultades para acceder rápidamente a esta información relevante, lo que limitaba su capacidad de aprovechar las promociones y disfrutar de experiencias enriquecedoras. La aplicación se enfoca en mejorar la experiencia del cliente, aumentar su participación, fomentar interacciones sociales y personalizar las ofertas. Nearby B se desarrolla para abordar el problema de la falta de información actualizada y personalizada sobre ofertas y eventos en los bares. Permite a los clientes estar al tanto de las ofertas relevantes para ellos, lo que mejora su experiencia al visitar los establecimientos y les brinda la oportunidad de aprovechar las promociones especiales. Además, la aplicación fomenta la interacción social al permitir que los usuarios compartan y recomienden sus experiencias en los bares participantes.
 
 
 
 ## 2. Alcance del producto / Software 
 
-Nearby B permitirá a los clientes que tengan un smartwatch recibir y acceder fácilmente a la información de los bares, promoviendo las ventas y aumentando la fidelidad del cliente. Los beneficios que brindará a los negocios son los siguientes:
+El software Nearby B es una aplicación que permite a los clientes recibir invitaciones y promociones personalizadas en sus dispositivos smartwatch, con el propósito de mantenerlos informados sobre las últimas ofertas y eventos en los bares participantes. Su alcance incluye:
 
-- Mejora de la experiencia del cliente: Nearby B facilita a los clientes la búsqueda rápida y conveniente de opciones relevantes y oportunidades en los bares, lo cual mejora su interacción con la aplicación.
-- Generación de más ventas: La capacidad de enviar invitaciones y ofertas personalizadas desde el smartwatch impulsa el consumo de los clientes en los bares. Al recibir notificaciones sobre promociones y eventos especiales, los clientes se sienten motivados a visitar los establecimientos y aprovechar las ofertas, lo que incrementa las ventas.
-- Mayor competitividad: La adopción de Nearby B brinda a los bares una ventaja competitiva al ofrecer una experiencia innovadora y personalizada. Destacarse de la competencia y proporcionar una experiencia diferenciada es fundamental para atraer y retener a los clientes en un mercado competitivo.
+- Proporcionar invitaciones y promociones personalizadas para mejorar la experiencia del cliente en los bares.
+- Fomentar la interacción social y la participación de los clientes a través de la posibilidad de compartir y recomendar experiencias en los establecimientos.
+- Personalizar las ofertas en base a las preferencias y patrones de consumo de los clientes.
+- Beneficios: Aumento de ventas y fidelidad del cliente para los bares participantes, así como una ventaja competitiva al ofrecer una experiencia innovadora y diferenciada.
+- Objetivos y metas alineados con los objetivos corporativos y estrategias de negocio de los bares, que pueden incluir el aumento de ventas, mejora de la experiencia del cliente, fidelización y creación de una comunidad comprometida.
 
-Nearby B se basa en la mejora de la experiencia del cliente, el aumento de las ventas, la generación de satisfacción y fidelidad del cliente, y la creación de una ventaja competitiva para los bares participantes. Estos beneficios respaldan el valor y el potencial impacto positivo que la aplicación puede tener tanto para los clientes como para los negocios involucrados.
+Nearby B ayuda a resolver el problema de la falta de información y promoción efectiva en los bares. Proporciona a los clientes acceso rápido y conveniente a invitaciones y promociones personalizadas, mejorando su experiencia, aumentando las ventas de los bares y creando una ventaja competitiva para aquellos que adoptan la aplicación.
 
 
 
 ## 3. Referencias
-
+-
+-
+-
+-
 
 
 
@@ -81,8 +86,7 @@ Nearby B se basa en la mejora de la experiencia del cliente, el aumento de las v
 14. Consulta de opiniones y reseñas de otros clientes: Los usuarios pueden consultar opiniones y reseñas de otros clientes sobre los bares, obteniendo una visión más completa de la experiencia de otros.
 15. Capacidad de calificar y comentar sobre la experiencia en el bar: Los usuarios pueden calificar y comentar sobre su experiencia en los bares, fomentando la interacción y proporcionando retroalimentación valiosa.
 
-Estas funcionalidades contribuyen a mejorar la experiencia del cliente, incrementar las ventas y generar una ventaja competitiva para los bares participantes.
-
+Estas funcionalidades contribuyen a mejorar la experiencia del cliente al brindarles información relevante, opciones personalizadas y facilidad de uso. Además, promuevenla interacción social, la participación activa y la toma de decisiones informadas.
 
 
 ## 5. Clases y características de usuario
@@ -138,7 +142,7 @@ D) Usuarios en búsqueda de nuevos bares:
 
 El sistema Near B se desarrollará en un entorno operativo específico que consta de los siguientes elementos:
 
-1. Plataforma de hardware: Nearby B estará diseñado para funcionar en dispositivos smartwatches de reconocidas marcas y modelos del mercado, como Apple Watch (compatible con watchOS) y smartwatches con Android Wear, incluyendo marcas como Samsung, Fossil, Huawei y Garmin, entre otros. Estos dispositivos cuentan con una amplia base de usuarios y ofrecen funcionalidades avanzadas, como pantallas táctiles y conectividad Bluetooth.
+1. Plataforma de hardware: Nearby B estará diseñado para funcionar en dispositivos smartwatches de reconocidas marcas y modelos del mercado, como Apple Watch (compatible con watchOS) y smartwatches con Android Wear, incluyendo marcas como Samsung, Fossil, Huawei y Garmin, entre otros. 
 2. Versiones de sistema operativo: El sistema Nearby B será compatible con las versiones más recientes de los sistemas operativos mencionados. Por ejemplo, en el caso de watchOS, se garantizará la compatibilidad con la última versión estable disponible, como watchOS 10 en la actualidad. Además, se considerará la compatibilidad con versiones anteriores, como watchOS 8 y versiones posteriores ampliamente utilizadas por los usuarios de Apple Watch.
 3. Otros sistemas o componentes: Nearby B deberá coexistir con otros sistemas y componentes esenciales para su funcionamiento. Esto incluye la comunicación con servidores y bases de datos que almacenan la información de los bares participantes, así como la integración con servicios de geolocalización confiables y ampliamente utilizados, como Google Maps y el sistema de posicionamiento global (GPS). Estos sistemas y componentes proporcionarán datos precisos sobre la ubicación de los usuarios y los bares cercanos, mejorando la experiencia del usuario al brindar información relevante y oportuna.
 
@@ -247,16 +251,15 @@ A continuación se muestran los requerimientos funcionales:
 
 ## 9. Reglas de negocio
 
-1. Registro de Usuarios: Los usuarios deben registrarse en la aplicación proporcionando información precisa y verídica sobre su identidad y preferencias. Se debe verificar la autenticidad de la información proporcionada.
-2. Privacidad de los Usuarios: La aplicación debe proteger la privacidad de los usuarios y asegurar que su información personal no sea compartida con terceros sin su consentimiento. Se deben seguir las leyes y regulaciones de protección de datos aplicables.
-3. Uso Responsable de la Aplicación: Los usuarios deben utilizar la aplicación de manera responsable y respetar las normas de conducta establecidas. No se permitirá el uso de la aplicación para fines ilegales, difamatorios, discriminatorios o perjudiciales.
-4. Promociones Exclusivas: Los bares participantes pueden ofrecer promociones exclusivas a través de la aplicación. Estas promociones deben ser auténticas y estar disponibles según los términos y condiciones establecidos por cada bar.
-5. Uso Adecuado de las Promociones: Los usuarios deben utilizar las promociones y descuentos proporcionados por la aplicación de acuerdo con las instrucciones y restricciones especificadas. El uso indebido de las promociones puede resultar en la suspensión de la cuenta del usuario.
-6. Respeto de las Opiniones y Comentarios: Los usuarios deben respetar las opiniones y comentarios de otros usuarios. No se permitirá el acoso, la difamación o el lenguaje ofensivo en la sección de comentarios y reseñas.
-7. Cumplimiento de las Regulaciones Locales: Los bares participantes y los usuarios de la aplicación deben cumplir con todas las regulaciones y leyes locales aplicables, incluyendo las relacionadas con el consumo de alcohol, horarios de funcionamiento, y normas de salud y seguridad.
-8. Actualización de Información: Los bares participantes deben mantener actualizada su información, incluyendo horarios de funcionamiento, menús y promociones. Los usuarios deben recibir información precisa y actualizada sobre los bares a través de la aplicación.
-9. Responsabilidad de los Usuarios: Los usuarios son responsables de su propio comportamiento y acciones mientras utilizan la aplicación. No se permitirá el uso de identidades falsas o engañosas, ni la realización de actividades que puedan dañar la reputación de la aplicación o los bares participantes.
-10. Cooperación con los Bares Participantes: La aplicación debe establecer una relación de cooperación y colaboración con los bares participantes, brindándoles soporte y asistencia en la promoción de sus eventos y ofertas. Los bares también deben cumplir con las políticas y directrices establecidas por la aplicación.
+1. Privacidad de los Usuarios: La aplicación debe proteger la privacidad de los usuarios y asegurar que su información personal no sea compartida con terceros sin su consentimiento. Se deben seguir las leyes y regulaciones de protección de datos aplicables.
+2. Uso Responsable de la Aplicación: Los usuarios deben utilizar la aplicación de manera responsable y respetar las normas de conducta establecidas. No se permitirá el uso de la aplicación para fines ilegales, difamatorios, discriminatorios o perjudiciales.
+3. Promociones Exclusivas: Los bares participantes pueden ofrecer promociones exclusivas a través de la aplicación. Estas promociones deben ser auténticas y estar disponibles según los términos y condiciones establecidos por cada bar.
+4. Uso Adecuado de las Promociones: Los usuarios deben utilizar las promociones y descuentos proporcionados por la aplicación de acuerdo con las instrucciones y restricciones especificadas. El uso indebido de las promociones puede resultar en la suspensión de la cuenta del usuario.
+5. Respeto de las Opiniones y Comentarios: Los usuarios deben respetar las opiniones y comentarios de otros usuarios. No se permitirá el acoso, la difamación o el lenguaje ofensivo en la sección de comentarios y reseñas.
+6. Cumplimiento de las Regulaciones Locales: Los bares participantes y los usuarios de la aplicación deben cumplir con todas las regulaciones y leyes locales aplicables, incluyendo las relacionadas con el consumo de alcohol, horarios de funcionamiento, y normas de salud y seguridad.
+7. Actualización de Información: Los bares participantes deben mantener actualizada su información, incluyendo horarios de funcionamiento, menús y promociones. Los usuarios deben recibir información precisa y actualizada sobre los bares a través de la aplicación.
+8. Responsabilidad de los Usuarios: Los usuarios son responsables de su propio comportamiento y acciones mientras utilizan la aplicación. No se permitirá el uso de identidades falsas o engañosas, ni la realización de actividades que puedan dañar la reputación de la aplicación o los bares participantes.
+9. Cooperación con los Bares Participantes: La aplicación debe establecer una relación de cooperación y colaboración con los bares participantes, brindándoles soporte y asistencia en la promoción de sus eventos y ofertas. Los bares también deben cumplir con las políticas y directrices establecidas por la aplicación.
 
 Estas reglas de negocio establecen los lineamientos y requisitos para el uso adecuado y responsable de la aplicación Nearby B, tanto para los usuarios como para los bares participantes.
 
