@@ -70,7 +70,12 @@ def insertarRol(rol_data: Rol):
     conn.execute(roles.insert().values(dict(rol_data)))
     conn.commit()
     res = {"status": "Rol insertado con éxito"}
-    return res """
+    return res 
+
+    fecha
+    2014-10-25 20:00:00
+    
+    """
     
 @router.put("/update/{ID}")
 def actualizarRol(usuarios: Rol, ID):
