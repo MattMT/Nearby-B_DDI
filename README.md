@@ -262,3 +262,4 @@ A continuación se muestran los requerimientos funcionales:
 Estas reglas de negocio establecen los lineamientos y requisitos para el uso adecuado y responsable de la aplicación Nearby B, tanto para los usuarios como para los bares participantes.
 
 
+
