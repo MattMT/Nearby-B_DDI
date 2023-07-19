@@ -246,7 +246,6 @@ A continuación se muestran los requerimientos funcionales:
 9.  Fiabilidad: La aplicación debe ser confiable y estable, evitando errores y fallas frecuentes. Se deben implementar mecanismos de control de calidad y pruebas exhaustivas para garantizar su correcto funcionamiento.
 
 
-
 ## 9. Reglas de negocio
 
 1. Privacidad de los Usuarios: La aplicación debe proteger la privacidad de los usuarios y asegurar que su información personal no sea compartida con terceros sin su consentimiento. Se deben seguir las leyes y regulaciones de protección de datos aplicables.
