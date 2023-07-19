@@ -61,8 +61,6 @@ Nearby B ayuda a resolver el problema de la falta de información y promoción e
 -
 -
 -
--
-
 
 ## 4. Funcionalidades del producto
 
