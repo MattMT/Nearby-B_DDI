@@ -61,6 +61,8 @@ Nearby B ayuda a resolver el problema de la falta de información y promoción e
 -
 -
 -
+
+
 ## 4. Funcionalidades del producto
 
 1. Compatibilidad con sistemas operativos: Nearby B es compatible con los principales sistemas operativos de smartwatches, lo que amplía su accesibilidad y alcance a un mayor número de usuarios.
@@ -259,7 +261,4 @@ A continuación se muestran los requerimientos funcionales:
 
 Estas reglas de negocio establecen los lineamientos y requisitos para el uso adecuado y responsable de la aplicación Nearby B, tanto para los usuarios como para los bares participantes.
 
-
-
-      
 
