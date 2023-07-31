@@ -1,24 +1,29 @@
-""" from sqlalchemy import Column, Integer, String, DateTime, Boolean, func
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.sql.sqltypes import Integer, String, Enum, Float, Date, DateTime,Boolean
+from sqlalchemy.dialects.mysql import ENUM
 from config.db import meta, engine
+import datetime
+from sqlalchemy import Table, Column
 
-Base = declarative_base()
+""" estatus_enum = ENUM('Activo', 'Inactivo', name='estatus_enum') """
 
-class Ubicacion(Base):
-    __tablename__ = 'tbc_ubicacion'
-
-    ID = Column(Integer, primary_key=True, autoincrement=True)
-    num_interior = Column(String(45), nullable=False)
-    num_exterior = Column(Integer, nullable=False)
-    calle = Column(String(45), nullable=False)
-    colonia = Column(String(45), nullable=False)
-    cp = Column(Integer, nullable=False)
-    ciudad = Column(String(45), nullable=False)
-    estado = Column(String(45), nullable=False)
-    status = Column(Boolean, default=True)
-    fecha_registro = Column(DateTime, default=func.now())
-    fecha_actualizacion = Column(DateTime, nullable=True)
+ubicaciones =Table('tbb_ubicacion', meta,
+    Column('ID', Integer, primary_key=True, autoincrement=True, nullable=False),
+    Column('numero_int', Integer, nullable=False),
+    Column('numero_ext', String(45), nullable=False),
+    Column('calle', String(45), nullable=False),
+    Column('colonia',String(45), nullable=False),
+    Column('codigo_postal', Integer, nullable=False),
+    Column('ciudad', String(45), nullable=False),
+    Column('estado', String(45), nullable=False),
+    Column('status',Boolean, nullable=True, default=True),
+    Column('fecha_registro', DateTime, nullable=True, default=datetime.datetime.utcnow),
+    Column('fecha_actualizacion', DateTime, nullable=True, default=None)
+ )
 
 
 meta.create_all(engine)
- """
+
+
+
+
+  

@@ -3,28 +3,23 @@ from fastapi import APIRouter,HTTPException
 from models.rol import roles
 from schemas.rol import Rol
 from config.db import conn
-
-# Resto del código
-
-
-# Resto del código
-
+from sqlalchemy import update
 
 # Crear una instancia de APIRouter
-router = APIRouter()
+router_Rol = APIRouter()
 
-@router.get("/getAll")
+@router_Rol.get("/getAllRoles")
 def obtenerRoles():
     lista_tupla_roles = conn.execute(roles.select()).fetchall()
     lista_diccionario_roles = []
     for tupla_rol in lista_tupla_roles:
         diccionario_rol = {
             "ID": tupla_rol[0],
-            "Nombre": tupla_rol[1],
-            "Descripcion": tupla_rol[2],
-            "Estatus": tupla_rol[3],
-            "Fecha_registro": tupla_rol[4].strftime("%Y-%m-%d %H:%M:%S"),
-            "Fecha_Actualizacion": tupla_rol[5].strftime("%Y-%m-%d %H:%M:%S")
+            "nombre": tupla_rol[1],
+            "descripcion": tupla_rol[2],
+            "status": tupla_rol[3],
+            "fecha_registro": tupla_rol[4].strftime("%Y-%m-%d %H:%M:%S"),
+            "fecha_actualizacion": tupla_rol[5].strftime("%Y-%m-%d %H:%M:%S")
             if tupla_rol[5]
             else None,
         }
@@ -33,7 +28,7 @@ def obtenerRoles():
 
 
 
-@router.get("/getOne/{id_roles}")
+@router_Rol.get("/getOneRol/{id_roles}")
 def obtenerRol(id_roles):
     tupla_rol = conn.execute(
         roles.select().where(roles.c.ID == id_roles)
@@ -41,11 +36,11 @@ def obtenerRol(id_roles):
     if tupla_rol:
         diccionario_rol = {
             "ID": tupla_rol[0],
-            "Nombre": tupla_rol[1],
-            "Descripcion": tupla_rol[2],
-            "Estatus": tupla_rol[3],
-            "Fecha_registro": tupla_rol[4].strftime("%Y-%m-%d %H:%M:%S"),
-            "Fecha_Actualizacion": tupla_rol[5].strftime("%Y-%m-%d %H:%M:%S")
+            "nombre": tupla_rol[1],
+            "descripcion": tupla_rol[2],
+            "status": tupla_rol[3],
+            "fecha_registro": tupla_rol[4].strftime("%Y-%m-%d %H:%M:%S"),
+            "fecha_Actualizacion": tupla_rol[5].strftime("%Y-%m-%d %H:%M:%S")
             if tupla_rol[5]
             else None,
         }
@@ -57,7 +52,7 @@ def obtenerRol(id_roles):
 
 
 
-@router.post("/insert")
+@router_Rol.post("/insertRol")
 def insertarRol(rol_data: Rol):
     with conn.begin() as trans:
         conn.execute(roles.insert().values(dict(rol_data)))
@@ -65,48 +60,25 @@ def insertarRol(rol_data: Rol):
     res = {"status": "rol insertado con éxito"}
     return res
 
-""" @router.post("/insert")
-def insertarRol(rol_data: Rol):
-    conn.execute(roles.insert().values(dict(rol_data)))
-    conn.commit()
-    res = {"status": "Rol insertado con éxito"}
-    return res 
-
-    fecha
-    2014-10-25 20:00:00
     
-    """
     
-@router.put("/update/{ID}")
-def actualizarRol(usuarios: Rol, ID):
+@router_Rol.put("/updateRol/{ID}")
+def actualizarRol(roless: Rol, ID):
     res = obtenerRol(ID)
-    print(res)
+    """ print(res) """
     if res.get("status") == "No existe el rol":
         return res
     else:
         with conn.begin() as trans:
             result = conn.execute(
-                roles.update().values(dict(usuarios)).where(roles.c.ID == ID)
+                roles.update().values(dict(roless)).where(roles.c.ID == ID)
             )
             trans.commit()
     return result.last_updated_params()
 
 
-""" @router.put("/update/{ID}")
-def actualizarUsuario(usuarios: Usuario, ID):
-    res = obtenerUsuario(ID)
-    print(res)
-    if res.get("status") == "No existe ese usuario":
-        return res
-    else:
-        result = conn.execute(usuario.update().values(dict(usuarios)).where(usuario.c.ID == ID)).last_updated_params()
-        conn.commit()
-    return result """
 
-
-
-
-@router.delete("/delete/{ID}")
+""" @router.delete("/delete/{ID}")
 def eliminarRol(ID: int):
     res = obtenerRol(ID)
     if res.get("status") == "No existe el rol":
@@ -116,15 +88,20 @@ def eliminarRol(ID: int):
             conn.execute(roles.delete().where(roles.c.ID == ID))
             trans.commit()
     return {"message": "Rol eliminado correctamente"}
+ """
 
 
-""" @router.delete("/delete/{id_usuario}")
-def eliminarUsuario(id_usuario):
-    res = obtenerUsuario(id_usuario)
-    if res.get("status") == "No existe ese usuario":
-        return res
+
+@router_Rol.delete("/deleteRol/{ID}")
+def eliminarRol(ID: int):
+    # Primero, verifica si el rol existe en la base de datos
+    res = obtenerRol(ID)
+    if res.get("status") == "No existe el rol":
+        raise HTTPException(status_code=404, detail="No existe el rol")
     else:
-        conn.execute(usuario.delete().where(usuario.c.ID == id_usuario))
-        conn.commit()
-        res = {"status": "Usuario eliminado con éxito"}
-        return res """ 
+        # Si el rol existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
+        with conn.begin() as trans:
+            stmt = update(roles).where(roles.c.ID == ID).values(status=False)
+            conn.execute(stmt)
+            trans.commit()
+    return {"message": "Rol desactivado correctamente"}
