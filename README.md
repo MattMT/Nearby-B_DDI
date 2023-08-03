@@ -8,7 +8,7 @@
 <img align="left" src="https://github.com/MattMT/Nearby-B_DDI/blob/main/Frontend/Logos/Soft%20Code-1%20(Logotipo).png" alt="Logotipo_Empresa" width="300px">
    
 </div
-        
+           
      
   
 ## Historial de Versiones
