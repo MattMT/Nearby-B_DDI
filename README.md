@@ -1,7 +1,7 @@
 # Documento de Requerimientos de software *Nearby B*
 
  <div display:flex>
-     
+                       
     
 <img aling="right" src="https://github.com/MattMT/Nearby-B_DDI/blob/main/Frontend/Logos/Nearby-B%20(Logo).png" alt="Logotipo_App" width="300px" >
 
