@@ -3,6 +3,7 @@ from fastapi import APIRouter,HTTPException
 from models.rol import roles
 from schemas.rol import Rol
 from config.db import conn
+import datetime  # Asegúrate de agregar esta importación
 from sqlalchemy import update
 
 # Crear una instancia de APIRouter
@@ -62,46 +63,44 @@ def insertarRol(rol_data: Rol):
 
     
     
-@router_Rol.put("/updateRol/{ID}")
-def actualizarRol(roless: Rol, ID):
-    res = obtenerRol(ID)
-    """ print(res) """
-    if res.get("status") == "No existe el rol":
-        return res
-    else:
+@router_Rol.put("/updateRol/{id_roles}")
+def actualizarRol(roless: Rol, id_roles):
+    tupla_rol = conn.execute(
+        roles.select().where(roles.c.ID == id_roles)
+    ).first()
+
+    if tupla_rol:
+        # Obtener la fecha y hora actual en formato UTC
+        fecha_actualizacion = datetime.datetime.utcnow()
         with conn.begin() as trans:
             result = conn.execute(
-                roles.update().values(dict(roless)).where(roles.c.ID == ID)
+                roles.update()
+                .values(dict(roless, fecha_actualizacion=fecha_actualizacion))
+                .where(roles.c.ID == id_roles)
             )
             trans.commit()
-    return result.last_updated_params()
-
-
-
-""" @router.delete("/delete/{ID}")
-def eliminarRol(ID: int):
-    res = obtenerRol(ID)
-    if res.get("status") == "No existe el rol":
-        raise HTTPException(status_code=404, detail="No existe el rol")
+        diccionario_rol = {
+            "status": "Rol actualizado con éxito",
+            "fecha_actualizacion": fecha_actualizacion.strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        return diccionario_rol
     else:
-        with conn.begin() as trans:
-            conn.execute(roles.delete().where(roles.c.ID == ID))
-            trans.commit()
-    return {"message": "Rol eliminado correctamente"}
- """
+        raise HTTPException(status_code=404, detail="No existe el rol ingresado")
 
 
 
 @router_Rol.delete("/deleteRol/{ID}")
 def eliminarRol(ID: int):
     # Primero, verifica si el rol existe en la base de datos
-    res = obtenerRol(ID)
-    if res.get("status") == "No existe el rol":
-        raise HTTPException(status_code=404, detail="No existe el rol")
-    else:
+    tupla_rol = conn.execute(
+        roles.select().where(roles.c.ID == ID)
+    ).first()
+    if tupla_rol:
         # Si el rol existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
         with conn.begin() as trans:
             stmt = update(roles).where(roles.c.ID == ID).values(status=False)
             conn.execute(stmt)
             trans.commit()
-    return {"message": "Rol desactivado correctamente"}
+        return {"message": "Rol desactivado correctamente"}
+    else:
+        raise HTTPException(status_code=404, detail="No existe el rol")

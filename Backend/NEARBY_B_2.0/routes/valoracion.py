@@ -3,13 +3,14 @@ from fastapi import APIRouter,HTTPException
 from models.valoracion import valoraciones
 from schemas.valoracion import Valoracion
 from config.db import conn
+import datetime  # Asegúrate de agregar esta importación
 from sqlalchemy import update
 
 # Crear una instancia de APIRouter
 router_Valoracion = APIRouter()
 
 @router_Valoracion.get("/getAllValoraciones")
-def obtenerValoraciones():
+def obtenerTodasValoraciones():
     lista_tupla_Valoraciones = conn.execute(valoraciones.select()).fetchall()
     lista_diccionario_Valoraciones = []
     for tupla_Valoracion in lista_tupla_Valoraciones:
@@ -28,8 +29,8 @@ def obtenerValoraciones():
         lista_diccionario_Valoraciones.append(diccionario_valoracion)
     return lista_diccionario_Valoraciones
 
-@router_Valoracion.get("/getOneValoraciones/{id_Valoraciones}")
-def obtenerValoracion(id_Valoraciones):
+@router_Valoracion.get("/getOneValoracion/{id_Valoraciones}")
+def obtenerValoracionPorID(id_Valoraciones: int):
     tupla_Valoracion = conn.execute(
         valoraciones.select().where(valoraciones.c.ID == id_Valoraciones)
     ).first()
@@ -65,30 +66,43 @@ def insertarValoracion(valoracion_data: Valoracion):
     
     
 @router_Valoracion.put("/updateValoracion/{ID}")
-def actualizarValoracion(personass: Valoracion, ID):
-    res = obtenerValoracion(ID)
+def actualizarValoracion(Valoracioness: Valoracion, ID: int):
+    tupla_valoracion = conn.execute(
+        valoraciones.select().where(valoraciones.c.ID == ID)
+    ).first()
 
-    if res.get("status") == "No existe la Valoracion":
-        return res
-    else:
+    if tupla_valoracion:
+        # Obtener la fecha y hora actual en formato UTC
+        fecha_actualizacion = datetime.datetime.utcnow()
         with conn.begin() as trans:
             result = conn.execute(
-                valoraciones.update().values(dict(personass)).where(valoraciones.c.ID == ID)
+                valoraciones.update()
+                .values(dict(Valoracioness, fecha_actualizacion=fecha_actualizacion))
+                .where(valoraciones.c.ID == ID)
             )
             trans.commit()
-    return result.last_updated_params()
-
-
-
-@router_Valoracion.delete("/deleteValaoracion/{ID}")
-def eliminarValoraccion(ID: int):
-    res = obtenerValoracion(ID)
-    if res.get("status") == "No existe la valoracion":
-        raise HTTPException(status_code=404, detail="No existe la  valorcin")
+        diccionario_valoracion = {
+            "status": "Valoracion actualizada con éxito",
+            "fecha_actualizacion": fecha_actualizacion.strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        return diccionario_valoracion
     else:
+        raise HTTPException(status_code=404, detail="No existe la Valoracion ingresada")
+
+
+@router_Valoracion.delete("/deleteValoracion/{ID}")
+def eliminarValoracion(ID: int):
+    # Primero, verifica si la valoración existe en la base de datos
+    tupla_valoracion = conn.execute(
+        valoraciones.select().where(valoraciones.c.ID == ID)
+    ).first()
+    if tupla_valoracion:
+        # Si la valoración existe, actualiza el estado a 0 (inactivo) en lugar de eliminarla
         with conn.begin() as trans:
             stmt = update(valoraciones).where(valoraciones.c.ID == ID).values(status=False)
             conn.execute(stmt)
             trans.commit()
-    return {"message": "valoracion desactivado correctamente"}
+        return {"message": "Valoración desactivada correctamente"}
+    else:
+        raise HTTPException(status_code=404, detail="No existe la valoración")
  

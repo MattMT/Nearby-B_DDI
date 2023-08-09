@@ -3,6 +3,7 @@ from fastapi import APIRouter,HTTPException
 from models.horario import horarios
 from schemas.horario import Horario
 from config.db import conn
+import datetime  # Asegúrate de agregar esta importación
 from sqlalchemy import update
 
 # Crear una instancia de APIRouter
@@ -29,7 +30,7 @@ def obtenerHorarios():
 
 
 
-@router_Horario.get("/getOneHorarios/{id_horarios}")
+@router_Horario.get("/getOneHorario/{id_horarios}")
 def obtenerHorario(id_horarios):
     tupla_horario = conn.execute(
         horarios.select().where(horarios.c.ID == id_horarios)
@@ -54,42 +55,55 @@ def obtenerHorario(id_horarios):
 
 
 @router_Horario.post("/insertHorario")
-def insertarHorario(categoria_data: Horario):
+def insertarHorario(horario_data: Horario):
     with conn.begin() as trans:
-        conn.execute(horarios.insert().values(dict(categoria_data)))
+        conn.execute(horarios.insert().values(dict(horario_data)))
         trans.commit()
     res = {"status": "Horario insertado con éxito"}
     return res
 
     
     
-@router_Horario.put("/updateHorario/{ID}")
-def actualizarHorario(personass: Horario, ID):
-    res = obtenerHorario(ID)
 
-    if res.get("status") == "No existe el usuario":
-        return res
-    else:
+@router_Horario.put("/updateHorario/{ID}")
+def actualizarHorario(horarioss: Horario, ID):
+    tupla_horario = conn.execute(
+        horarios.select().where(horarios.c.ID == ID)
+    ).first()
+
+    if tupla_horario:
+        # Obtener la fecha y hora actual en formato UTC
+        fecha_actualizacion = datetime.datetime.utcnow()
         with conn.begin() as trans:
             result = conn.execute(
-                horarios.update().values(dict(personass)).where(horarios.c.ID == ID)
+                horarios.update()
+                .values(dict(horarioss, fecha_actualizacion=fecha_actualizacion))
+                .where(horarios.c.ID == ID)
             )
             trans.commit()
-    return result.last_updated_params()
+        diccionario_horario = {
+            "status": "Horario actualizado con éxito",
+            "fecha_actualizacion": fecha_actualizacion.strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        return diccionario_horario
+    else:
+        raise HTTPException(status_code=404, detail="No existe el horario ingresado")
+
 
 
 
 @router_Horario.delete("/deleteHorario/{ID}")
 def eliminarHorario(ID: int):
-    # Primero, verifica si el rol existe en la base de datos
-    res = obtenerHorario(ID)
-    if res.get("status") == "No existe el horario":
-        raise HTTPException(status_code=404, detail="No existe el horario")
-    else:
-        # Si el rol existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
+    # Primero, verifica si el horario existe en la base de datos
+    tupla_horario = conn.execute(
+        horarios.select().where(horarios.c.ID == ID)
+    ).first()
+    if tupla_horario:
+        # Si el horario existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
         with conn.begin() as trans:
             stmt = update(horarios).where(horarios.c.ID == ID).values(status=False)
             conn.execute(stmt)
             trans.commit()
-    return {"message": "Horario desactivado correctamente"}
- 
+        return {"message": "Horario desactivado correctamente"}
+    else:
+        raise HTTPException(status_code=404, detail="No existe el horario")

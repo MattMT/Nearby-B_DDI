@@ -1,8 +1,9 @@
 from fastapi import APIRouter,HTTPException
-
 from models.persona import personas
 from schemas.persona import Persona
 from config.db import conn
+import datetime  # Asegúrate de agregar esta importación
+
 from sqlalchemy import update
 
 # Crear una instancia de APIRouter
@@ -67,34 +68,45 @@ def insertarPersona(persona_data: Persona):
     return res
 
     
-    
 @router_Persona.put("/updatePersona/{ID}")
 def actualizarPerson(personass: Persona, ID):
-    res = obtenerPersona(ID)
+    tupla_persona = conn.execute(
+        personas.select().where(personas.c.ID == ID)
+    ).first()
 
-    if res.get("status") == "No existe la persona":
-        return res
-    else:
+    if tupla_persona:
+        # Obtener la fecha y hora actual en formato UTC
+        fecha_actualizacion = datetime.datetime.utcnow()
         with conn.begin() as trans:
             result = conn.execute(
-                personas.update().values(dict(personass)).where(personas.c.ID == ID)
+                personas.update()
+                .values(dict(personass, fecha_actualizacion=fecha_actualizacion))
+                .where(personas.c.ID == ID)
             )
             trans.commit()
-    return result.last_updated_params()
+        diccionario_persona = {
+            "status": "Persona actualizada con éxito",
+            "fecha_actualizacion": fecha_actualizacion.strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        return diccionario_persona
+    else:
+        raise HTTPException(status_code=404, detail="No existe la persona ingresada")
 
 
 
 @router_Persona.delete("/deletePersona/{ID}")
 def eliminarPersona(ID: int):
-    # Primero, verifica si el rol existe en la base de datos
-    res = obtenerPersona(ID)
-    if res.get("status") == "No existe la persona":
-        raise HTTPException(status_code=404, detail="No existe la  persona")
-    else:
-        # Si el rol existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
+    # Primero, verifica si la persona existe en la base de datos
+    tupla_persona = conn.execute(
+        personas.select().where(personas.c.ID == ID)
+    ).first()
+    if tupla_persona:
+        # Si la persona existe, actualiza el estado a 0 (inactivo) en lugar de eliminarla
         with conn.begin() as trans:
             stmt = update(personas).where(personas.c.ID == ID).values(status=False)
             conn.execute(stmt)
             trans.commit()
-    return {"message": "Persona desactivada correctamente"}
+        return {"message": "Persona desactivada correctamente"}
+    else:
+        raise HTTPException(status_code=404, detail="No existe la persona")
  

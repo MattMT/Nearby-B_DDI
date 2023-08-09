@@ -3,6 +3,7 @@ from fastapi import APIRouter,HTTPException
 from models.usuario import usuarios
 from schemas.usuario import Usuario
 from config.db import conn
+import datetime  # Asegúrate de agregar esta importación
 from sqlalchemy import update
 
 # Crear una instancia de APIRouter
@@ -68,33 +69,46 @@ def insertarUsuario(usuario_data: Usuario):
 
     
     
-@router_Usuario.put("/updateUsuario/{ID}")
-def actualizarUsario(personass: Usuario, ID):
-    res = obtenerUsuario(ID)
 
-    if res.get("status") == "No existe el usuario":
-        return res
-    else:
+@router_Usuario.put("/updateUsuario/{ID}")
+def actualizarUsuario(personass: Usuario, ID):
+    tupla_usuario = conn.execute(
+        usuarios.select().where(usuarios.c.ID == ID)
+    ).first()
+
+    if tupla_usuario:
+        # Obtener la fecha y hora actual en formato UTC
+        fecha_actualizacion = datetime.datetime.utcnow()
         with conn.begin() as trans:
             result = conn.execute(
-                usuarios.update().values(dict(personass)).where(usuarios.c.ID == ID)
+                usuarios.update()
+                .values(dict(personass, fecha_actualizacion=fecha_actualizacion))
+                .where(usuarios.c.ID == ID)
             )
             trans.commit()
-    return result.last_updated_params()
+        diccionario_usuario = {
+            "status": "Usuario actualizado con éxito",
+            "fecha_actualizacion": fecha_actualizacion.strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        return diccionario_usuario
+    else:
+        raise HTTPException(status_code=404, detail="No existe el usuario ingresado")
 
 
 
 @router_Usuario.delete("/deleteUsuario/{ID}")
-def eliminarUusario(ID: int):
-    # Primero, verifica si el rol existe en la base de datos
-    res = obtenerUsuario(ID)
-    if res.get("status") == "No existe el usuario":
-        raise HTTPException(status_code=404, detail="No existe el Usario")
-    else:
-        # Si el rol existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
+def eliminarUsuario(ID: int):
+    # Primero, verifica si el usuario existe en la base de datos
+    tupla_usuario = conn.execute(
+        usuarios.select().where(usuarios.c.ID == ID)
+    ).first()
+    if tupla_usuario:
+        # Si el usuario existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
         with conn.begin() as trans:
             stmt = update(usuarios).where(usuarios.c.ID == ID).values(status=False)
             conn.execute(stmt)
             trans.commit()
-    return {"message": "Usuario desactivado correctamente"}
+        return {"message": "Usuario desactivado correctamente"}
+    else:
+        raise HTTPException(status_code=404, detail="No existe el usuario")
  

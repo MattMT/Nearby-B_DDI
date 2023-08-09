@@ -3,6 +3,8 @@ from fastapi import APIRouter,HTTPException
 from models.ubicacion import ubicaciones
 from schemas.ubicacion import Ubicacion
 from config.db import conn
+import datetime  # Asegúrate de agregar esta importación
+
 from sqlalchemy import update
 # Crear una instancia de APIRouter
 router_ubicacion = APIRouter()
@@ -75,27 +77,42 @@ def insertarUbicacion(ubicacion_data: Ubicacion):
 
 @router_ubicacion.put("/updateUbicacion/{ID}")
 def actualizarUbicacion(ubicacioness: Ubicacion, ID):
-    res = obtenerUbicacion(ID)
-    """ print(res) """
-    if res.get("status") == "No existe la Ubicacion":
-        return res
-    else:
+    tupla_ubicacion = conn.execute(
+        ubicaciones.select().where(ubicaciones.c.ID == ID)
+    ).first()
+
+    if tupla_ubicacion:
+        # Obtener la fecha y hora actual en formato UTC
+        fecha_actualizacion = datetime.datetime.utcnow()
         with conn.begin() as trans:
             result = conn.execute(
-                ubicaciones.update().values(dict(ubicacioness)).where(ubicaciones.c.ID == ID)
+                ubicaciones.update()
+                .values(dict(ubicacioness, fecha_actualizacion=fecha_actualizacion))
+                .where(ubicaciones.c.ID == ID)
             )
             trans.commit()
-    return result.last_updated_params()
+        diccionario_ubicacion = {
+            "status": "Ubicacion actualizada con éxito",
+            "fecha_actualizacion": fecha_actualizacion.strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        return diccionario_ubicacion
+    else:
+        raise HTTPException(status_code=404, detail="No existe la ubicacion ingresada")
+
 
 
 @router_ubicacion.delete("/deleteUbicacion/{ID}")
 def eliminarUbicacion(ID: int):
-    res = obtenerUbicacion(ID)
-    if res.get("status") == "No existe la ubicacion":
-        raise HTTPException(status_code=404, detail="No existe la ubicacion")
-    else:
+    # Primero, verifica si la ubicación existe en la base de datos
+    tupla_ubicacion = conn.execute(
+        ubicaciones.select().where(ubicaciones.c.ID == ID)
+    ).first()
+    if tupla_ubicacion:
+        # Si la ubicación existe, actualiza el estado a 0 (inactivo) en lugar de eliminarla
         with conn.begin() as trans:
             stmt = update(ubicaciones).where(ubicaciones.c.ID == ID).values(status=False)
             conn.execute(stmt)
             trans.commit()
-    return {"message": "Ubicacion desactivada correctamente"}
+        return {"message": "Ubicacion desactivada correctamente"}
+    else:
+        raise HTTPException(status_code=404, detail="No existe la ubicacion")

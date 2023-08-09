@@ -2,7 +2,9 @@ from fastapi import APIRouter,HTTPException
 from models.servicio import servicios
 from schemas.servicio import Servicio
 from config.db import conn
+import datetime  # Asegúrate de agregar esta importación
 from sqlalchemy import update
+
 
 # Crear una instancia de APIRouter
 router_Servicio = APIRouter()
@@ -54,31 +56,43 @@ def insertarServicio(servicio_data: Servicio):
     res = {"status": "servicio insertado con éxito"}
     return res
 
-
 @router_Servicio.put("/updateServicio/{ID}")
 def actualizarServicio(servicioss: Servicio, ID):
-    res = obtenerServicio(ID)
-    print(res)
-    if res.get("status") == "No existe el Servicio":
-        return res
-    else:
+    tupla_servicio = conn.execute(
+        servicios.select().where(servicios.c.ID == ID)
+    ).first()
+
+    if tupla_servicio:
+        # Obtener la fecha y hora actual en formato UTC
+        fecha_actualizacion = datetime.datetime.utcnow()
         with conn.begin() as trans:
             result = conn.execute(
-                servicios.update().values(dict(servicioss)).where(servicios.c.ID == ID)
+                servicios.update()
+                .values(dict(servicioss, fecha_actualizacion=fecha_actualizacion))
+                .where(servicios.c.ID == ID)
             )
             trans.commit()
-    return result.last_updated_params()
+        diccionario_servicio = {
+            "status": "Servicio actualizado con éxito",
+            "fecha_actualizacion": fecha_actualizacion.strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        return diccionario_servicio
+    else:
+        raise HTTPException(status_code=404, detail="No existe el servicio ingresado")
+
 
 @router_Servicio.delete("/deleteServicio/{ID}")
 def eliminarServicio(ID: int):
-    # Primero, verifica si el rol existe en la base de datos
-    res = obtenerServicio(ID)
-    if res.get("status") == "No existe el Sercicio":
-        raise HTTPException(status_code=404, detail="No existe el Sercicio")
-    else:
-        # Si el rol existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
+    # Primero, verifica si el servicio existe en la base de datos
+    tupla_servicio = conn.execute(
+        servicios.select().where(servicios.c.ID == ID)
+    ).first()
+    if tupla_servicio:
+        # Si el servicio existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
         with conn.begin() as trans:
             stmt = update(servicios).where(servicios.c.ID == ID).values(status=False)
             conn.execute(stmt)
             trans.commit()
-    return {"message": "Sercicio desactivado correctamente"}
+        return {"message": "Servicio desactivado correctamente"}
+    else:
+        raise HTTPException(status_code=404, detail="No existe el Servicio")

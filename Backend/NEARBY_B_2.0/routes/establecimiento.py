@@ -3,6 +3,7 @@ from fastapi import APIRouter,HTTPException
 from models.establecimiento import establecimientos
 from schemas.establecimiento import Establecimiento
 from config.db import conn
+import datetime  # Asegúrate de agregar esta importación
 from sqlalchemy import update
 # Crear una instancia de APIRouter
 router_establecimiento = APIRouter()
@@ -64,32 +65,44 @@ def insertarEstablecimineto(establecimiento_data: Establecimiento):
     
     
 @router_establecimiento.put("/updateEstablecimiento/{ID}")
-def actualizarEstablecimiento(personass: Establecimiento, ID):
-    res = obtenerEstablecimiento(ID)
+def actualizarEstablecimiento(establecimientoss: Establecimiento, ID):
+    tupla_establecimiento = conn.execute(
+        establecimientos.select().where(establecimientos.c.ID == ID)
+    ).first()
 
-    if res.get("status") == "No existe el establecimiento":
-        return res
-    else:
+    if tupla_establecimiento:
+        # Obtener la fecha y hora actual en formato UTC
+        fecha_actualizacion = datetime.datetime.utcnow()
         with conn.begin() as trans:
             result = conn.execute(
-                establecimientos.update().values(dict(personass)).where(establecimientos.c.ID == ID)
+                establecimientos.update()
+                .values(dict(establecimientoss, fecha_actualizacion=fecha_actualizacion))
+                .where(establecimientos.c.ID == ID)
             )
             trans.commit()
-    return result.last_updated_params()
-
+        diccionario_establecimiento = {
+            "status": "Establecimiento actualizado con éxito",
+            "fecha_actualizacion": fecha_actualizacion.strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        return diccionario_establecimiento
+    else:
+        raise HTTPException(status_code=404, detail="No existe el establecimiento ingresado")
 
 
 @router_establecimiento.delete("/deleteEstablecimiento/{ID}")
-def eliminarCategoria(ID: int):
-    # Primero, verifica si el rol existe en la base de datos
-    res = obtenerEstablecimiento(ID)
-    if res.get("status") == "No existe la establecimiento":
-        raise HTTPException(status_code=404, detail="No existe el establecimiento")
-    else:
-        # Si el rol existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
+def eliminarEstablecimiento(ID: int):
+    # Primero, verifica si el establecimiento existe en la base de datos
+    tupla_establecimiento = conn.execute(
+        establecimientos.select().where(establecimientos.c.ID == ID)
+    ).first()
+    if tupla_establecimiento:
+        # Si el establecimiento existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
         with conn.begin() as trans:
             stmt = update(establecimientos).where(establecimientos.c.ID == ID).values(status=False)
             conn.execute(stmt)
             trans.commit()
-    return {"message": "Establecimiento desactivado correctamente"}
+        return {"message": "Establecimiento desactivado correctamente"}
+    else:
+        raise HTTPException(status_code=404, detail="No existe el establecimiento")
+
  

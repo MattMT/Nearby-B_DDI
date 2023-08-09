@@ -3,6 +3,7 @@ from fastapi import APIRouter,HTTPException
 from models.local import locales
 from schemas.local import Local
 from config.db import conn
+import datetime  # Asegúrate de agregar esta importación
 from sqlalchemy import update
 
 # Crear una instancia de APIRouter
@@ -66,31 +67,44 @@ def insertarLocal(local_data: Local):
     
 @router_local.put("/updateLocal/{ID}")
 def actualizarLocal(localess: Local, ID):
-    res = obtenerlocal(ID)
+    tupla_local = conn.execute(
+        locales.select().where(locales.c.ID == ID)
+    ).first()
 
-    if res.get("status") == "No existe el local":
-        return res
-    else:
+    if tupla_local:
+        # Obtener la fecha y hora actual en formato UTC
+        fecha_actualizacion = datetime.datetime.utcnow()
         with conn.begin() as trans:
             result = conn.execute(
-                locales.update().values(dict(localess)).where(locales.c.ID == ID)
+                locales.update()
+                .values(dict(localess, fecha_actualizacion=fecha_actualizacion))
+                .where(locales.c.ID == ID)
             )
             trans.commit()
-    return result.last_updated_params()
+        diccionario_local = {
+            "status": "Local actualizado con éxito",
+            "fecha_actualizacion": fecha_actualizacion.strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        return diccionario_local
+    else:
+        raise HTTPException(status_code=404, detail="No existe el local ingresado")
+
 
 
 
 @router_local.delete("/deleteLocal/{ID}")
 def eliminarLocal(ID: int):
-    # Primero, verifica si el rol existe en la base de datos
-    res = obtenerlocal(ID)
-    if res.get("status") == "No existe el local":
-        raise HTTPException(status_code=404, detail="No existe el local")
-    else:
-        # Si el rol existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
+    # Primero, verifica si el local existe en la base de datos
+    tupla_local = conn.execute(
+        locales.select().where(locales.c.ID == ID)
+    ).first()
+    if tupla_local:
+        # Si el local existe, actualiza el estado a 0 (inactivo) en lugar de eliminarlo
         with conn.begin() as trans:
             stmt = update(locales).where(locales.c.ID == ID).values(status=False)
             conn.execute(stmt)
             trans.commit()
-    return {"message": "Local desactivado correctamente"}
+        return {"message": "Local desactivado correctamente"}
+    else:
+        raise HTTPException(status_code=404, detail="No existe el local")
  
