@@ -1,4 +1,4 @@
-# Documento de Requerimientos de software *Nearby B*
+s# Documento de Requerimientos de software *Nearby B*
 
  <div display:flex>
                        
@@ -33,7 +33,7 @@
 | Fabiola Bautista Jaquín   | Documentador  |   Soft Code  |16/06/2023   |  😉 |
 | Gabriel Guzmán García   | Líder / Desarrollador Front-End  | Soft Code  |16/06/2023   | 😉 |
 | Uriel Maldonado Cortéz   | Desarrollador Back-End  | Soft Code |16/06/2023  | 😉 |
-|Mateo Maldonado Tolentino   | Analista   | Soft Code |16/06/2023    | 😉  |
+|Mateo Maldonado Tolentino   | Administrador de Base de Datos   | Soft Code |16/06/2023    | 😉  |
 
 
 
