@@ -267,11 +267,13 @@ A continuación se muestran los requerimientos funcionales:
 Estas reglas de negocio establecen los lineamientos y requisitos para el uso adecuado y responsable de la aplicación Nearby B, tanto para los usuarios como para los bares participantes.
 
 
-
+ 
 ## FODA
 
-![image](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/224f3daa-b9cb-4639-bdc1-e82f30aacc82)
+![1](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/8f1c73c8-d816-47cf-b4ab-be87b252d057)
 
+
+![2](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/2c74fd5c-3902-44ac-af7c-b94804a1696b)
 
 
 
