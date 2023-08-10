@@ -1,4 +1,4 @@
-s# Documento de Requerimientos de software *Nearby B*
+## Documento de Requerimientos de software *Nearby B*
 
  <div display:flex>
                        
@@ -8,6 +8,11 @@ s# Documento de Requerimientos de software *Nearby B*
 <img align="left" src="https://github.com/MattMT/Nearby-B_DDI/blob/main/Frontend/Logos/Soft%20Code-1%20(Logotipo).png" alt="Logotipo_Empresa" width="300px">
    
 </div
+
+
+![image](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/b4e97e3d-7e82-42a4-8680-f0660e5d8f31) 
+
+
            
      
         
@@ -263,6 +268,9 @@ Estas reglas de negocio establecen los lineamientos y requisitos para el uso ade
 
 
 
+## FODA
+
+![image](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/224f3daa-b9cb-4639-bdc1-e82f30aacc82)
 
 
 
