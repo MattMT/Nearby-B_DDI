@@ -269,7 +269,8 @@ Estas reglas de negocio establecen los lineamientos y requisitos para el uso ade
 
 ## Arquitectura de Software
 
-![Arquitectura de Software](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/71c7e5b9-29fe-4a3e-8e70-30d138e65ba7)
+![Arquitectura de Software (1)](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/e5339394-dab9-4bc6-a62d-f0f37b56f332)
+
 
 
  
