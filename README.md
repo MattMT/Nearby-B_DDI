@@ -267,13 +267,20 @@ A continuación se muestran los requerimientos funcionales:
 Estas reglas de negocio establecen los lineamientos y requisitos para el uso adecuado y responsable de la aplicación Nearby B, tanto para los usuarios como para los bares participantes.
 
 
+## Arquitectura de Software
+
+![Arquitectura de Software](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/71c7e5b9-29fe-4a3e-8e70-30d138e65ba7)
+
+
  
-## FODA
+## Evaluación del equipo
 
-![1](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/8f1c73c8-d816-47cf-b4ab-be87b252d057)
+![FODA SOFT CODE](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/ac53a726-27c1-4b5d-bbf9-c7d424a3bafd)
 
 
-![2](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/2c74fd5c-3902-44ac-af7c-b94804a1696b)
+
+Conclusión:
+El equipo de trabajo del proyecto "Nearby B" presenta una combinación de fortalezas en términos de experiencia diversificada y habilidades técnicas, así como oportunidades en un mercado en crecimiento y posibilidades de innovación tecnológica. Sin embargo, se deben abordar las debilidades en términos de limitaciones de tiempo y experiencia conjunta, así como las amenazas relacionadas con la competencia y los cambios tecnológicos. Con un enfoque en la colaboración efectiva, la comunicación y la adaptación ágil, el equipo tiene el potencial de superar los desafíos y lograr el éxito en la realización del proyecto "Nearby B".
 
 
 
