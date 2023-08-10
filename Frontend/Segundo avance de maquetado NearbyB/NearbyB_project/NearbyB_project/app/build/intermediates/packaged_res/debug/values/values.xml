@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NearbyB_project</string>
+    <string name="auto_lavado">Party POOL</string>
+    <string name="bar_exclusi">Bar exclusivo que combina un ambiente elegante con una selecci\u00C3\u00B3n de bebidas de alta calidad. Abierto desde 18:00 pm hasta 4:00 am , te invitamos a disfrutar de nuestra experiencia \u00C3\u00BAnica durante toda la semana.\n\nConceptos Bar ubicado en Calle Zaragoza n\u00C3\u00BAmero 123, Colonia Centro de Ciudad Xicotepec, Puebla, M\u00C3\u00A9xico.\nPuntuar\n\n\n</string>
+    <string name="complication_label">Example complication</string>
+    <string name="hello_world">From the Square world,\nHello, %1$s!</string>
+    <string name="puntua_este">Puntua este Bar\nComparte tu opinion con otros usuarios</string>
+    <string name="tile_label">Example tile</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_presentation._main">presentation.MainActivity</string>
+    <style name="auto_lavado">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="bar_exclusi">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="puntua_este">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+</resources>

@@ -1,0 +1,212 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="mx.edu.utxj.ti.idgs.ddi.nearbyb_project"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+8-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature android:name="android.hardware.type.watch" />
+11-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:4:5-64
+11-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:4:19-61
+12
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:6:5-68
+13-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:6:22-65
+14
+15    <queries>
+15-->[androidx.wear.tiles:tiles:1.1.0] C:\Users\52764\.gradle\caches\transforms-3\3237bb6f0f4833f7e8f7ebb1cefb6cb6\transformed\tiles-1.1.0\AndroidManifest.xml:7:5-11:15
+16        <intent>
+16-->[androidx.wear.tiles:tiles:1.1.0] C:\Users\52764\.gradle\caches\transforms-3\3237bb6f0f4833f7e8f7ebb1cefb6cb6\transformed\tiles-1.1.0\AndroidManifest.xml:8:9-10:18
+17            <action android:name="androidx.wear.tiles.action.BIND_UPDATE_REQUESTER" />
+17-->[androidx.wear.tiles:tiles:1.1.0] C:\Users\52764\.gradle\caches\transforms-3\3237bb6f0f4833f7e8f7ebb1cefb6cb6\transformed\tiles-1.1.0\AndroidManifest.xml:9:13-87
+17-->[androidx.wear.tiles:tiles:1.1.0] C:\Users\52764\.gradle\caches\transforms-3\3237bb6f0f4833f7e8f7ebb1cefb6cb6\transformed\tiles-1.1.0\AndroidManifest.xml:9:21-84
+18        </intent>
+19    </queries>
+20
+21    <application
+21-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:8:5-66:19
+22        android:allowBackup="true"
+22-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:9:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.8.0] C:\Users\52764\.gradle\caches\transforms-3\af4b7c5236c9ff872e815c327d77073f\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:10:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:11:9-41
+28        android:supportsRtl="true"
+28-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:12:9-35
+29        android:testOnly="true"
+30        android:theme="@android:style/Theme.DeviceDefault" >
+30-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:13:9-59
+31        <service
+31-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:14:9-29:19
+32            android:name="mx.edu.utxj.ti.idgs.ddi.nearbyb_project.complication.MainComplicationService"
+32-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:15:13-65
+33            android:exported="true"
+33-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:16:13-36
+34            android:label="@string/complication_label"
+34-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:17:13-55
+35            android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER" >
+35-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:18:13-99
+36            <intent-filter>
+36-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:19:13-21:29
+37                <action android:name="android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST" />
+37-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:20:17-116
+37-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:20:25-113
+38            </intent-filter>
+39
+40            <meta-data
+40-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:23:13-25:46
+41                android:name="android.support.wearable.complications.SUPPORTED_TYPES"
+41-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:24:17-86
+42                android:value="SHORT_TEXT" />
+42-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:25:17-43
+43            <meta-data
+43-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:26:13-28:37
+44                android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
+44-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:27:17-92
+45                android:value="0" />
+45-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:28:17-34
+46        </service>
+47        <service
+47-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:30:9-42:19
+48            android:name="mx.edu.utxj.ti.idgs.ddi.nearbyb_project.tile.MainTileService"
+48-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:31:13-49
+49            android:exported="true"
+49-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:32:13-36
+50            android:label="@string/tile_label"
+50-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:33:13-47
+51            android:permission="com.google.android.wearable.permission.BIND_TILE_PROVIDER" >
+51-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:34:13-91
+52            <intent-filter>
+52-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:35:13-37:29
+53                <action android:name="androidx.wear.tiles.action.BIND_TILE_PROVIDER" />
+53-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:36:17-88
+53-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:36:25-85
+54            </intent-filter>
+55
+56            <meta-data
+56-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:39:13-41:61
+57                android:name="androidx.wear.tiles.PREVIEW"
+57-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:40:17-59
+58                android:resource="@drawable/tile_preview" />
+58-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:41:17-58
+59        </service>
+60
+61        <uses-library
+61-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:44:9-46:39
+62            android:name="com.google.android.wearable"
+62-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:45:13-55
+63            android:required="true" />
+63-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:46:13-36
+64        <!--
+65               Set to true if your app is Standalone, that is, it does not require the handheld
+66               app to run.
+67        -->
+68        <meta-data
+68-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:51:9-53:36
+69            android:name="com.google.android.wearable.standalone"
+69-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:52:13-66
+70            android:value="true" />
+70-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:53:13-33
+71
+72        <activity
+72-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:55:9-65:20
+73            android:name="mx.edu.utxj.ti.idgs.ddi.nearbyb_project.presentation.MainActivity"
+73-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:56:13-54
+74            android:exported="true"
+74-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:57:13-36
+75            android:label="@string/app_name"
+75-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:58:13-45
+76            android:theme="@android:style/Theme.DeviceDefault" >
+76-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:59:13-63
+77            <intent-filter>
+77-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:60:13-64:29
+78                <action android:name="android.intent.action.MAIN" />
+78-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:61:17-69
+78-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:61:25-66
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:63:17-77
+80-->C:\Users\52764\Downloads\NearbyB_project_g\NearbyB_project2\app\src\main\AndroidManifest.xml:63:27-74
+81            </intent-filter>
+82        </activity>
+83        <activity
+83-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\52764\.gradle\caches\transforms-3\85f5647172acdcef0931197787051993\transformed\ui-tooling-1.3.0\AndroidManifest.xml:23:9-25:39
+84            android:name="androidx.compose.ui.tooling.PreviewActivity"
+84-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\52764\.gradle\caches\transforms-3\85f5647172acdcef0931197787051993\transformed\ui-tooling-1.3.0\AndroidManifest.xml:24:13-71
+85            android:exported="true" />
+85-->[androidx.compose.ui:ui-tooling:1.3.0] C:\Users\52764\.gradle\caches\transforms-3\85f5647172acdcef0931197787051993\transformed\ui-tooling-1.3.0\AndroidManifest.xml:25:13-36
+86        <activity
+86-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\52764\.gradle\caches\transforms-3\e880529cda3e2b7ac313a2e995c423a2\transformed\ui-test-manifest-1.3.0\AndroidManifest.xml:23:9-25:39
+87            android:name="androidx.activity.ComponentActivity"
+87-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\52764\.gradle\caches\transforms-3\e880529cda3e2b7ac313a2e995c423a2\transformed\ui-test-manifest-1.3.0\AndroidManifest.xml:24:13-63
+88            android:exported="true" />
+88-->[androidx.compose.ui:ui-test-manifest:1.3.0] C:\Users\52764\.gradle\caches\transforms-3\e880529cda3e2b7ac313a2e995c423a2\transformed\ui-test-manifest-1.3.0\AndroidManifest.xml:25:13-36
+89        <activity
+89-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\52764\.gradle\caches\transforms-3\54920da8981638670086ef863332dd56\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+90            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+90-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\52764\.gradle\caches\transforms-3\54920da8981638670086ef863332dd56\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+91            android:exported="false"
+91-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\52764\.gradle\caches\transforms-3\54920da8981638670086ef863332dd56\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+92            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+92-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\52764\.gradle\caches\transforms-3\54920da8981638670086ef863332dd56\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+93
+94        <meta-data
+94-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\52764\.gradle\caches\transforms-3\ae3c720c3e59e800a5a7c5728f984afd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+95            android:name="com.google.android.gms.version"
+95-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\52764\.gradle\caches\transforms-3\ae3c720c3e59e800a5a7c5728f984afd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+96            android:value="@integer/google_play_services_version" />
+96-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\52764\.gradle\caches\transforms-3\ae3c720c3e59e800a5a7c5728f984afd\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+97
+98        <provider
+98-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:25:9-33:20
+99            android:name="androidx.startup.InitializationProvider"
+99-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:26:13-67
+100            android:authorities="mx.edu.utxj.ti.idgs.ddi.nearbyb_project.androidx-startup"
+100-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:27:13-68
+101            android:exported="false" >
+101-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:28:13-37
+102            <meta-data
+102-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
+103                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+103-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
+104                android:value="androidx.startup" />
+104-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
+105        </provider>
+106
+107        <receiver
+107-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:35:9-47:20
+108            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+108-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:36:13-76
+109            android:directBootAware="false"
+109-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:37:13-44
+110            android:enabled="true"
+110-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:38:13-35
+111            android:exported="true"
+111-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:39:13-36
+112            android:permission="android.permission.DUMP" >
+112-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:40:13-57
+113            <intent-filter>
+113-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:41:13-43:29
+114                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+114-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:17-91
+114-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:25-88
+115            </intent-filter>
+116            <intent-filter>
+116-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:44:13-46:29
+117                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+117-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:17-85
+117-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\52764\.gradle\caches\transforms-3\7572e18afb254c8ec32732935a76264c\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:25-82
+118            </intent-filter>
+119        </receiver>
+120    </application>
+121
+122</manifest>

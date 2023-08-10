@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "mx.edu.utxj.ti.idgs.ddi.nearbyb_project.app-mergeDebugResources-69:/values-round-v23/values-round-v23.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\52764\\.gradle\\caches\\transforms-3\\91ce3378d77ad7213920fdb300d2f3c3\\transformed\\wear-1.2.0\\res\\values-round-v23\\values-round-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,118,204",
+                        "endColumns": "62,85,79",
+                        "endOffsets": "113,199,279"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\52764\\Downloads\\NearbyB_project_g\\NearbyB_project2\\app\\src\\main\\res\\values-round\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "75",
+                        "endOffsets": "87"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "284",
+                        "endColumns": "75",
+                        "endOffsets": "355"
+                    }
+                }
+            ]
+        }
+    ]
+}

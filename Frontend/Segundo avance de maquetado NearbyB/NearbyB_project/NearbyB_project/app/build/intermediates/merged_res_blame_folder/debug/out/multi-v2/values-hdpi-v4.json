@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "mx.edu.utxj.ti.idgs.ddi.nearbyb_project.app-mergeDebugResources-69:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\52764\\.gradle\\caches\\transforms-3\\96d1313186bc83d370ca7f0c957c33fa\\transformed\\appcompat-1.1.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
