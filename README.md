@@ -272,6 +272,12 @@ Estas reglas de negocio establecen los lineamientos y requisitos para el uso ade
 ![Arquitectura de Software (1)](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/e5339394-dab9-4bc6-a62d-f0f37b56f332)
 
 
+## Diagrama Entidad Relación
+
+
+![WhatsApp Image 2023-08-10 at 13 17 40](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/e9c15437-c7e4-4660-b976-2ae84d255364)
+
+
 
  
 ## Evaluación del equipo
@@ -282,6 +288,16 @@ Estas reglas de negocio establecen los lineamientos y requisitos para el uso ade
 
 Conclusión:
 El equipo de trabajo del proyecto "Nearby B" presenta una combinación de fortalezas en términos de experiencia diversificada y habilidades técnicas, así como oportunidades en un mercado en crecimiento y posibilidades de innovación tecnológica. Sin embargo, se deben abordar las debilidades en términos de limitaciones de tiempo y experiencia conjunta, así como las amenazas relacionadas con la competencia y los cambios tecnológicos. Con un enfoque en la colaboración efectiva, la comunicación y la adaptación ágil, el equipo tiene el potencial de superar los desafíos y lograr el éxito en la realización del proyecto "Nearby B".
+
+
+
+
+
+
+
+
+
+
 
 
 
