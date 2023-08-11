@@ -68,7 +68,7 @@ Nearby B ayuda a resolver el problema de la falta de información y promoción e
 -
 
 
-## 4. Funcionalidades del producto}
+## 4. Funcionalidades del producto
 
 Las funcionalidades del producto de Nearby B están estratégicamente diseñadas para transformar la manera en que los usuarios interactúan con los establecimientos y eventos locales. Cada funcionalidad está cuidadosamente concebida para abordar necesidades específicas de los usuarios y del mercado, contribuyendo así a la creación de una experiencia integral y enriquecedora.
 
