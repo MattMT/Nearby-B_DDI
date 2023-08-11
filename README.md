@@ -10,7 +10,7 @@
 </div
 
 
-![image](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/b4e97e3d-7e82-42a4-8680-f0660e5d8f31) 
+![Organigrama Soft Codeeee](https://github.com/MattMT/Nearby-B_DDI/assets/84816148/ae195769-dc21-43a6-8ed5-d6d897796c61)
 
 
            
