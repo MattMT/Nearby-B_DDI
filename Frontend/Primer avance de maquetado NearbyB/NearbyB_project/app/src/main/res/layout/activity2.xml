@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido! a "
+        android:textSize="20dp"
+        android:fontFamily="@font/font1"
+        android:layout_marginTop="18dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nearby B"
+        android:textSize="20dp"
+        android:fontFamily="@font/font1"
+        android:textAlignment="center"
+        />
+    <ImageView
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/font1"
+        android:text="Activar ubicación"
+        android:textSize="10dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_light_default"/>
+
+</LinearLayout>
