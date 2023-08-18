@@ -1,0 +1,24 @@
+------------------- PYTHON ------------------------------
+
+conda create --name IDGS python=3 
+conda activate IDGS 
+conda env remove --name IDGS    
+pip install fastapi  
+pip install uvicorn     
+pip install pymysql
+conda install sqlalchemy
+python -m uvicorn app:app --reload
+
+------------------- ANGULAR ------------------------------
+npm install
+npm install -g @angular/cli
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+ng new my-app
+cd my-app
+ng serve --open
+
+-------------------- INSTALL ---------------------------
+npm install bootstrap
+npm install material-icons
+npm install jquery @popperjs/core
+ng add @angular/material

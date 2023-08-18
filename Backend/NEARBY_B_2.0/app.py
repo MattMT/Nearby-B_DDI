@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from routes.Sp_bd_NerabyB import router_SP_NEARBY 
+from routes.view import  routerVistaUsersList
 from routes.rol import router_Rol
 from routes.ubicacion import router_ubicacion
 from routes.servicio import router_Servicio
@@ -18,6 +19,7 @@ from fastapi.openapi.utils import get_openapi
 
 app = FastAPI()
 app.include_router(router_SP_NEARBY)
+app.include_router(routerVistaUsersList)
 app.include_router(router_Rol)
 app.include_router(router_ubicacion)
 app.include_router(router_Servicio)
@@ -33,6 +35,7 @@ app.include_router(router_Valoracion)
 
 # Incluye las rutas y asigna una etiqueta a cada una
 app.include_router(router_SP_NEARBY, tags=["SP_NEARBY_B"])
+app.include_router(routerVistaUsersList, tags=["Vistas"])
 app.include_router(router_Rol, tags=["Roles"])
 app.include_router(router_ubicacion, tags=["Ubicaciones"])
 app.include_router(router_Servicio, tags=["Servicios"])
