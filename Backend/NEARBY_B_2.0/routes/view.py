@@ -26,7 +26,7 @@ def obtener_datos_vista(db: Session = Depends(get_db)):
     
     
     
-@routerVistaUsersList.get("/obtener_recomendacion")
+@routerVistaUsersList.get("/obtener_lista")
 def obtener_datos_vista(db: Session = Depends(get_db)):
     try:
         query = text("SELECT ID, Negocio, Sucursal, puntuacion, persona_ID, nombre_usuario FROM vw_list;")
@@ -40,6 +40,27 @@ def obtener_datos_vista(db: Session = Depends(get_db)):
                 "Puntuacion": resultado[3],
                 "Persona_ID": resultado[4],
                 "NombreUsuario": resultado[5],
+            }
+            lista_resultados.append(diccionario_resultado)
+
+        return lista_resultados
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+        
+    
+@routerVistaUsersList.get("/obtener_recomendaciones")
+def obtener_datos_vista(db: Session = Depends(get_db)):
+    try:
+        query = text("SELECT ID, Puntuacion, servicio, sucursal FROM vw_val_list;")
+        resultados = db.execute(query).fetchall()
+        lista_resultados = []
+        for resultado in resultados:
+            diccionario_resultado = {
+                "ID": resultado[0],
+                "Puntuacion": resultado[1],
+                "servicio": resultado[2],
+                "sucursal": resultado[3],
+
             }
             lista_resultados.append(diccionario_resultado)
 
